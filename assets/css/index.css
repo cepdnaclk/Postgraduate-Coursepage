@@ -1,0 +1,39 @@
+.vh-50{
+    min-height: 50vh!important;
+}
+.vh-75{
+    min-height: 75vh!important;
+}
+
+/* Footer ------------------------------------------------------------------- */
+.footer-link{
+  text-decoration: none !important;
+  color: white !important;
+  padding: 0 6px;
+  transition: 0.3s;
+}
+.footer-link:hover{
+  color: #0d6efd !important;
+}
+
+footer a{
+  text-decoration: none !important;
+  color: white !important;
+  transition: 0.3s;
+}
+footer a:hover{
+  color: #0d6efd !important;
+}
+
+footer li{
+  padding-bottom: 4px;
+}
+
+.footer-hr{
+  width: 60px; background-color: #ffffff; height: 2px
+}
+
+.footer{
+  background-color: #1EB2A6 !important;
+  text-decoration: none;
+}
