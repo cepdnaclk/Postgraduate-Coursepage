@@ -1,9 +1,36 @@
+@font-face {
+    font-family: Araboto;
+    src: url(../webfonts/Araboto-Normal-400.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../webfonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: Fabrikat;
+    src: url(../webfonts/Fabrikat-Normal-Medium.otf);
+}
+
 .vh-50{
     min-height: 50vh!important;
 }
 .vh-75{
     min-height: 75vh!important;
 }
+
+/* Body ------------------------------------------------------------------- */
+body {
+  background: #ecececcb;
+}
+
+.section-title{
+    font-family: Araboto;
+    color: #2f2f2f;
+    
+}
+
 
 /* Footer ------------------------------------------------------------------- */
 .footer-link{
@@ -13,7 +40,7 @@
   transition: 0.3s;
 }
 .footer-link:hover{
-  color: #0d6efd !important;
+  color: #020202 !important;
 }
 
 footer a{
@@ -22,7 +49,7 @@ footer a{
   transition: 0.3s;
 }
 footer a:hover{
-  color: #0d6efd !important;
+  color: #080b0b !important;
 }
 
 footer li{
@@ -36,4 +63,129 @@ footer li{
 .footer{
   background-color: #1EB2A6 !important;
   text-decoration: none;
+}
+
+/*Course Page -> Profile Cards ---------------------------------------------------------------*/
+
+/* Reseting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Fabrikat;
+} 
+
+
+.profileCard .container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.profileCard .container .col-md-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileCard .container .card::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    height: 0;
+    width: 150%;
+    background-color: #2c9088;
+    z-index: -1;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+.profileCard .container .card {
+    width: 280px;
+    height: 365px;
+    overflow: hidden;
+    z-index: 3;
+    transition: all 0.5s ease-in-out;
+    border: none;
+    
+}
+
+.profileCard .container .card:hover::before {
+    height: 150px;
+}
+
+.profileCard .container .card .img-container {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+.profileCard .container .card:hover .img-container {
+    border: 10px solid #2c9088;
+}
+
+.profileCard .container .card .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+}
+
+.profileCard .container .card:hover .img-container img {
+    box-shadow: 0 0 0 14px #f7f5ec;
+    transform: scale(0.8);
+}
+
+/* .profileCard .container .card .h3 {
+    margin-bottom: 5px !important;
+    font-weight: 600;
+    pointer-events: none;
+} */
+
+.profileCard .container .card .designation {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    pointer-events: none;
+}
+
+.profileCard .container .card ul {
+    background-color: #2c9088;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(100px);
+}
+
+.profileCard .container .card:hover ul {
+    transform: translateY(40px);
+}
+
+.profileCard .container .card ul li {
+    padding: 5px 8px;
+    transition: all 0.4s;
+}
+
+.profileCard .container .card ul li a {
+    color: #FFF;
+}
+
+.profileCard .container .card ul li:hover {
+    background: #fff;
+}
+
+.profileCard .container .card ul li:hover a {
+    color: #1369ce;
+}
+
+.btn-viewProfile{
+    border-color: #4c8580;;
+    border-width:2px;
+    color: #1f857d;
+}
+
+.btn-viewProfile:hover{
+    border-color: #2c9088;
+    background-color: #2c9088;
+    border-width:2px;
+    color: #ffffff;;
 }
