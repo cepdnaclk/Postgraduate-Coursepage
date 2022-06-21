@@ -189,3 +189,73 @@ footer li{
     border-width:2px;
     color: #ffffff;;
 }
+
+
+/* Masters------------------------------------------------------------------- */
+
+.dropdown .btn{
+  box-sizing: border-box;
+  border: 1px solid #1EB2A6;
+  border-radius: 5px;
+  margin-left: 25px;
+}
+
+.courseCard .container-md{
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.courseCard .card{
+  display: flex;
+  margin: 1. 0em;
+  border-radius: 10px;
+  background: #efefef;
+  width: 18rem;
+}
+
+.courseCard .card:hover{
+  transform: scale(1.02);
+  box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);;
+  -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+  background-color: rgb(255, 255, 255);
+}
+
+.courseCard .card .btn{
+  box-sizing: border-box;
+  width: 255px;
+  border: 1px solid #1EB2A6;
+  border-radius: 5px;
+  
+}
+
+.card .card-body h3{
+  font-family: 'Alatsi';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 0.1em;
+  color: #535353;
+}
+
+.circle{
+  margin-top: 3%;
+  margin-left: 3%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #1EB2A6;
+}
+
+.circle .content{   
+  margin-top: 30%;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  transform: rotate(-5deg);
+}
