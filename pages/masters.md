@@ -1,0 +1,4 @@
+---
+layout: mastersPage
+permalink: /masters
+---
