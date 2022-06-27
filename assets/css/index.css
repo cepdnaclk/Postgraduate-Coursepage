@@ -197,6 +197,7 @@ footer li{
   background-position: center center;
   overflow: hidden; 
   padding: 64px 0;
+  margin: 0;
    background-size: cover; 
   background-color:rgb(67, 67, 67); 
   background-blend-mode: overlay;
