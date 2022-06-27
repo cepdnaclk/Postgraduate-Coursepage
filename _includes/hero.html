@@ -1,14 +1,26 @@
-{% if page.layout == "coursePage" %}
-<div id="home" style="background:url(../assets/img/home_img/bg-course.jpg); width: 100%; min-width: 300px; height: 100vh; background-size: cover; background-attachment: fixed; background-color:rgb(64, 64, 64); background-blend-mode: overlay;">
-{% else %}
-<div id="home" style="background:url(../assets/img/home_img/bg-home.jpg); width: 100%; min-width: 300px; height: 100vh; background-size: cover; background-attachment: fixed; background-color:rgb(64, 64, 64); background-blend-mode: overlay;">   
-{% endif %}
+<div id="home">
     
     <div class="logo-bar">
+        {% if page.layout == "coursePage" %}
+        <div class="path">
+            <a href="#">Home</a>
+            <i class="bi bi-chevron-right"></i>
+            <span>Course</span>
+        </div>
+        <img class="logo" src="../assets/img/home_img/Logo.svg" alt="">
+        {% else %}
         <img class="logo" src="../assets/img/home_img/Logo.svg" alt="">
         <img class="clock" src="../assets/img/home_img/Clock.svg" alt="">
+        {% endif %}
     </div>
     <div class="menu-bar">
+        {% if page.layout == "coursePage" %}
+        <label id="course-name">Complex Reactive Systems and Process Automation</label>
+        <div id="search-box">
+            <label>COXXX</label>
+            <img src="../assets/img/home_img/Course_code.svg" alt="">
+        </div>
+        {% else %}
         <img class="nav-menu" src="../assets/img/home_img/nav_menu.png" alt="">
         <ul class="nav-link">
             <li><a class="lt-green" href="#">Home</a></li>
@@ -18,10 +30,13 @@
         <div id="search-box">
             <a href="#"><img src="../assets/img/home_img/Register.svg" alt=""></a>
         </div>
+        {% endif %}
     </div>
+    {% if page.layout != "coursePage" %}
     <div id="hero">
         <img src="../assets/img/home_img/hero.svg" alt="">
     </div>
+    {% endif %}
 
     <!-- <div class="align-self-center text-center text-light col-md-8 offset-md-2">
 		
