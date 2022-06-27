@@ -195,9 +195,11 @@ footer li{
 
 .dropdown .btn{
   box-sizing: border-box;
+  background: #1EB2A6;
   border: 1px solid #1EB2A6;
   border-radius: 5px;
   margin-left: 25px;
+  width: 150px;
 }
 
 .courseCard .container-md{
@@ -258,4 +260,20 @@ footer li{
   letter-spacing: 0.1em;
   color: #FFFFFF;
   transform: rotate(-5deg);
+}
+
+.pagination{
+  box-sizing: border-box;
+  text-align: center;
+  margin: 30px 30px 60px;
+  left: 500px;
+}
+
+.pagination li{
+  display: inline-block;
+  margin: 5px;
+}
+
+.previous-page, .next-page{
+  width: 80px;
 }
