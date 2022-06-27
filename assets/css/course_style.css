@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Hero Section ------------------------------------------------------------------------------------*/
+#home {
+    width: 100%;
+    min-width: 300px;
+    height: 100vh;
+    background: url(../img/home_img/bg-course.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color:rgb(64, 64, 64, 0.5);
+    background-blend-mode: overlay;
+}
+
+#home .logo-bar {
+    display: block;
+    height: 12%;
+}
+
+#home .path {
+    display: inline-flex;
+    margin-top: 30px;
+    margin-left: 6%;
+}
+
+#home .path a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+#home .path a:hover {
+    color: #95e0da;
+}
+
+#home .path i {
+    display: flex;
+    color: white;
+    align-items: center;
+    font-size: 15px;
+    margin: 0px 5px 0px 5px;
+}
+
+#home .path span {
+    color: #1EB2A6;
+    font-size: large;
+}
+
+#home .logo {
+    float: right;
+    margin-top: 25px;
+    margin-right: 2.5%;
+    width: 32.5%;
+    height: auto;
+}
+
+#home .menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(88%);
+    height: 60px;
+    background: rgba(255, 255, 255, 0.15);
+    margin: 15% 6% 0px 6%;
+    overflow: hidden;
+}
+
+#home .menu-bar #course-name {
+    width: 80%;
+    font-family: 'Alatsi', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin-left: 2%;
+}
+
+#search-box {
+    position: relative;
+    width: 268px;
+    height: 65px;
+}
+
+#search-box label {
+    position: absolute;
+    right: 22%;
+    top: 25%;
+    color: white;
+    z-index: 100;
+
+    font-family: 'Inria Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0.15em;
+}
+
+#search-box img {
+    position: absolute;
+    height: 65px;
+    right: 0;
+    top: 0;
+}
+
+/* screen <= 1024px */
+@media (max-width: 1024px) {
+    #home .menu-bar #course-name {
+        font-size: 25px;
+    }
+
+    #home .menu-bar {
+        margin-top: 25%;
+    }
+}
+
+/* screen <= 960px */
+@media (max-width: 960px) {
+
+    #home .menu-bar {
+        height: 60px;
+        margin-top: 20%;
+        /* overflow: visible; */
+    }
+
+    #search-box img {
+        height: 62px;
+        right: -30px;
+    }
+
+}
+
+/* screen <= 800px */
+@media (max-width: 800px) {
+
+    #home .logo {
+        width: 40%;
+    }
+
+    #home .menu-bar {
+        height: 70px;
+        margin-top: 25%;
+        /* overflow: visible; */
+    }
+
+    #home .path a {
+        font-size: medium;
+    }
+
+    #home .path i {
+        font-size: 12px;
+    }
+
+    #home .path span {
+        font-size: medium;
+    }
+    
+    #search-box {
+        height: 70px;
+    }
+
+    #search-box img {
+        height: 70px;
+        right: -80px;
+    }
+
+    #search-box label {
+        font-size: 22px;
+    }
+}
+
+/* screen < 695px */
+@media (max-width: 695px) {
+
+    #home .logo {
+        width: 40%;
+    }
+
+    #home .menu-bar {
+        height: 80px;
+        margin-top: 25%;
+    }
+
+    #home .menu-bar #course-name {
+        font-size: 20px;
+    }
+
+    #home .path a {
+        font-size: small;
+    }
+
+    #home .path i {
+        font-size: 10px;
+    }
+
+    #home .path span {
+        font-size: small;
+    }
+    
+    #search-box {
+        height: 80px;
+    }
+
+    #search-box img {
+        height: 85px;
+        right: -150px;
+    }
+
+    #search-box label {
+        font-size: 20px;
+    }
+}
+
+/* screen <= 500px */
+@media (max-width: 500px) {
+    
+    #home .logo {
+        width: 50%;
+    }
+
+    #home .menu-bar {
+        height: 100px;
+        margin-top: 30%;
+        overflow: visible;
+    }
+
+    #home .menu-bar #course-name {
+        font-size: 15px;
+    }
+    
+    #search-box {
+        height: 100px;
+        overflow: hidden;
+    }
+
+    #search-box img {
+        height: 100px;
+        right: -250px;
+    }
+
+    #search-box label {
+        font-size: 15px;
+        right: 15%;
+        top: 34%;
+    }
+}
