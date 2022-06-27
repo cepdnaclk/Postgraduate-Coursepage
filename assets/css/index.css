@@ -190,6 +190,49 @@ footer li{
     color: #ffffff;;
 }
 
+/* Counter Area - Course Page ------------------------------------------------- */
+.counter_area .counter_bg {
+  background-image: url(../img/home_img/stat-bar.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden; 
+  padding: 64px 0;
+   background-size: cover; 
+  background-color:rgb(67, 67, 67); 
+  background-blend-mode: overlay;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .counter_area .counter_bg {
+    padding: 64px 25px;
+  }
+}
+
+.counter_area .single_counter .icon {
+  margin-right: 10px;
+}
+
+.counter_area .single_counter .icon i {
+  font-size: 70px;
+  color: #fff;
+}
+
+.counter_area .single_counter .events h3 {
+  font-size: 40px;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.counter_area .single_counter .events p {
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: 200;
+  color: #fff;
+}
+
 
 /* Masters------------------------------------------------------------------- */
 
