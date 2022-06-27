@@ -35,7 +35,7 @@
 }
 
 #home .path a:hover {
-    color: #95e0da;
+    color: #1EB2A6;
 }
 
 #home .path i {
@@ -318,11 +318,10 @@
     transform: scale(0.8);
 }
 
-/* .profileCard .container .card .h3 {
+.profileCard .container .card .h4 {
     margin-bottom: 5px !important;
-    font-weight: 600;
     pointer-events: none;
-} */
+}
 
 .profileCard .container .card .designation {
     font-size: 0.85rem;
@@ -377,12 +376,13 @@
   background-position: center center;
   overflow: hidden; 
   padding: 64px 0;
-   background-size: cover; 
+  background-size: cover; 
   background-color:rgb(67, 67, 67); 
   background-blend-mode: overlay;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px;
+  width: 100%;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
