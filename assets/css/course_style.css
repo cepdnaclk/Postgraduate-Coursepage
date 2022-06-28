@@ -379,9 +379,9 @@
   background-size: cover; 
   background-color:rgb(67, 67, 67); 
   background-blend-mode: overlay;
-  -webkit-border-radius: 7px;
+  /* -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
-  border-radius: 7px;
+  border-radius: 7px; */
   width: 100%;
 }
 

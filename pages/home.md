@@ -1,5 +1,5 @@
 ---
-layout: default
-permalink: /
+layout: homePage
+permalink: /home
 ---
 
