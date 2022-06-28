@@ -366,7 +366,7 @@
     border-color: #2c9088;
     background-color: #2c9088;
     border-width:2px;
-    color: #ffffff;;
+    color: #ffffff;
 }
 
 /* Counter Area - Course Page ------------------------------------------------- */
@@ -379,10 +379,6 @@
   background-size: cover; 
   background-color:rgb(67, 67, 67); 
   background-blend-mode: overlay;
-  /* -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  border-radius: 7px; */
-  width: 100%;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {

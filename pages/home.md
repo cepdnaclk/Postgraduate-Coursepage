@@ -1,5 +1,4 @@
 ---
 layout: homePage
-permalink: /home
+permalink: /
 ---
-
