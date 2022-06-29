@@ -254,6 +254,58 @@
     }
 }
 
+/* Course Cards ---------------------------------------------------------------*/
+
+.courseCard .container-md{
+    margin-top: 60px;
+  }
+  
+  .courseCard .card{
+    display: flex;
+    margin: 1. 0em;
+    margin-bottom: 2ex;
+    border-radius: 10px;
+    background: #fff;
+    width: 18rem;
+    border: none;
+  }
+  
+  .courseCard .card:hover{
+    transform: scale(1.02);
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .card .card-body h3{
+    font-family: 'Alatsi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 0.1em;
+    color: #535353;
+  }
+  
+  .circle{
+    margin-top: 3%;
+    margin-left: 3%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #1EB2A6;
+  }
+  
+  .circle .content{   
+    margin-top: 30%;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    transform: rotate(-5deg);
+  }
+
 /* Profile Cards ---------------------------------------------------------------*/
 
 .profileCard .container {
