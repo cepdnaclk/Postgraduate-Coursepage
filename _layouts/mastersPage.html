@@ -26,132 +26,38 @@ layout: default
                 <div class="container-md">
                     
                     <div class="row g-3">
-                
+                        {%- for each in site.data.course_cards -%}
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="card mx-auto">
                                 <div class="circle">
                                     <div class="content">
-                                        <h3>TE</h3>
+                                        <h3>{{ each.course_type}}</h3>
                                     </div>
                                 </div>
             
                                 <div class="card-body">
-                                    <h3>COXXX</h3>
-                                    <h3>Bio Computing</h3>
-                                    <p>Module Type 1</p></br>
-                                    <p color="#1EB2A6">3 Credits</p>
-                                    <p>by course coordintor</p>
-                                    <a href="#" class="btn btn-outline-primary btn-viewMore">View More</a>
+                                    <h3>{{ each.course_code}}</h3>
+                                    <h3>{{ each.course_title}}</h3>
+                                    <p>{{ each.module_type}}</p></br>
+                                    <p color="#1EB2A6">{{ each.course_credits}}</p>
+                                    <p>by {{ each.course_coordinator}}</p>
+                                    <a href="{{ each.coursePage_url}}" class="btn btn-outline-primary btn-viewMore">View More</a>
                                 </div>  
                             </div>
                         </div>
-            
-            
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card mx-auto">
-                                <div class="circle">
-                                    <div class="content">
-                                        <h3>TE</h3>
-                                    </div>
-                                </div>
-            
-                                <div class="card-body">
-                                    <h3>COXXX</h3>
-                                    <h3>Bio Computing</h3>
-                                    <p>Module Type 1</p></br>
-                                    <p color="#1EB2A6">3 Credits</p>
-                                    <p>by course coordintor</p>
-                                    <a href="#" class="btn btn-outline-primary btn-viewMore">View More</a>
-                                </div>  
-                            </div>
+                        {%- endfor -%}
                         </div>
-            
-            
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card mx-auto">
-                                <div class="circle">
-                                    <div class="content">
-                                        <h3>Core</h3>
-                                    </div>
-                                </div>
-            
-                                <div class="card-body">
-                                    <h3>COXXX</h3>
-                                    <h3>Bio Computing</h3>
-                                    <p>Module Type 1</p></br>
-                                    <p color="#1EB2A6">3 Credits</p>
-                                    <p>by course coordintor</p>
-                                    <a href="#" class="btn btn-outline-primary btn-viewMore">View More</a>
-                                </div>  
-                            </div>
-                        </div>
-            
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card mx-auto">
-                                <div class="circle">
-                                    <div class="content">
-                                        <h3>Core</h3>
-                                    </div>
-                                </div>
-            
-                                <div class="card-body">
-                                    <h3>COXXX</h3>
-                                    <h3>Bio Computing</h3>
-                                    <p>Module Type 1</p></br>
-                                    <p color="#1EB2A6">3 Credits</p>
-                                    <p>by course coordintor</p>
-                                    <a href="#" class="btn btn-outline-primary btn-viewMore">View More</a>
-                                </div>  
-                            </div>
-                        </div>
-            
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card mx-auto">
-                                <div class="circle">
-                                    <div class="content">
-                                        <h3>Core</h3>
-                                    </div>
-                                </div>
-            
-                                <div class="card-body">
-                                    <h3>COXXX</h3>
-                                    <h3>Bio Computing</h3>
-                                    <p>Module Type 1</p></br>
-                                    <p color="#1EB2A6">3 Credits</p>
-                                    <p>by course coordintor</p>
-                                    <a href="#" class="btn btn-outline-primary btn-viewMore">View More</a>
-                                </div>  
-                            </div>
-                        </div>
-            
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card mx-auto">
-                                <div class="circle">
-                                    <div class="content">
-                                        <h3>Core</h3>
-                                    </div>
-                                </div>
-            
-                                <div class="card-body">
-                                    <h3>COXXX</h3>
-                                    <h3>Bio Computing</h3>
-                                    <p>Module Type 1</p></br>
-                                    <p color="#1EB2A6">3 Credits</p>
-                                    <p>by course coordintor</p>
-                                    <a href="#" class="btn btn-outline-primary btn-viewMore">View More</a>
-                                </div>  
-                            </div>
-                        </div>
-            
+
+                        {% if site.data.course_cards.size > 6 %}
+                        {% assign pages =  site.data.course_cards.size | divided_by: 6.0 | ceil %}
                         <div class="pagination d-flex justify-content-center mx-auto mt-5">
                             <li class="page-item previous-page"><a class=page-link href="#">Prev</a></li>
-                            <li class="page-item current-page"><a class=page-link href="#">1</a></li>
-                            <li class="page-item dots"><a class=page-link href="#">2</a></li>
-                            <li class="page-item current-page"><a class=page-link href="#">3</a></li>
-                            <li class="page-item current-page"><a class=page-link href="#">4</a></li>
-                            <li class="page-item dots"><a class=page-link href="#">5</a></li>
+                            {% for count in (1..pages) %}
+                            <li class="page-item current-page"><a class=page-link href="#">{{ count }}</a></li>
+                            {% endfor %}
                             <li class="page-item next-page"><a class=page-link href="#">Next</a></li>
                         </div>
+                        {% endif %}
                     </div>
                 </div>     
             </div>

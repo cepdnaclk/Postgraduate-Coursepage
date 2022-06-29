@@ -1,0 +1,84 @@
+[
+    {
+        "course_type" : "TE",
+        "course_code" : "COXXX",
+        "course_title": "Bio Computing",
+        "module_type" : "Module Type 1",
+        "course_credits" : "3 Credits",
+        "course_coordinator" : "Course Coordinator",
+        "coursePage_url" : "/course"
+    },
+    {
+        "course_type" : "Core",
+        "course_code" : "COXXX",
+        "course_title": "Bio Computing",
+        "module_type" : "Module Type 2",
+        "course_credits" : "3 Credits",
+        "course_coordinator" : "Course Coordinator",
+        "coursePage_url" : "#"
+    },
+    {
+        "course_type" : "Core",
+        "course_code" : "COXXX",
+        "course_title": "Bio Computing",
+        "module_type" : "Module Type 2",
+        "course_credits" : "3 Credits",
+        "course_coordinator" : "Course Coordinator",
+        "coursePage_url" : "#"
+    },
+    {
+        "course_type" : "Core",
+        "course_code" : "COXXX",
+        "course_title": "Bio Computing",
+        "module_type" : "Module Type 2",
+        "course_credits" : "3 Credits",
+        "course_coordinator" : "Course Coordinator",
+        "coursePage_url" : "#"
+    },
+    {
+        "course_type" : "Core",
+        "course_code" : "COXXX",
+        "course_title": "Bio Computing",
+        "module_type" : "Module Type 2",
+        "course_credits" : "3 Credits",
+        "course_coordinator" : "Course Coordinator",
+        "coursePage_url" : "#"
+    },
+    {
+        "course_type" : "Core",
+        "course_code" : "COXXX",
+        "course_title": "Bio Computing",
+        "module_type" : "Module Type 2",
+        "course_credits" : "3 Credits",
+        "course_coordinator" : "Course Coordinator",
+        "coursePage_url" : "#"
+    },
+    {
+        "course_type" : "Core",
+        "course_code" : "COXXX",
+        "course_title": "Bio Computing",
+        "module_type" : "Module Type 2",
+        "course_credits" : "3 Credits",
+        "course_coordinator" : "Course Coordinator",
+        "coursePage_url" : "#"
+    },
+    {
+        "course_type" : "Core",
+        "course_code" : "COXXX",
+        "course_title": "Bio Computing",
+        "module_type" : "Module Type 2",
+        "course_credits" : "3 Credits",
+        "course_coordinator" : "Course Coordinator",
+        "coursePage_url" : "#"
+    },
+    {
+        "course_type" : "Core",
+        "course_code" : "COXXX",
+        "course_title": "Bio Computing",
+        "module_type" : "Module Type 2",
+        "course_credits" : "3 Credits",
+        "course_coordinator" : "Course Coordinator",
+        "coursePage_url" : "#"
+    }
+
+]
