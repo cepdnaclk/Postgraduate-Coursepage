@@ -45,7 +45,6 @@
     height: 60px;
     background: rgba(255, 255, 255, 0.15);
     margin: 25px 6% 0px 6%;
-    overflow: hidden;
 }
 
 #home .menu-bar .nav-menu {
@@ -54,12 +53,12 @@
     display: none;
 }
 
-#home .menu-bar ul {
+#home .menu-bar > ul {
     text-decoration: none;
     margin: 0;
 }
 
-#home .menu-bar ul li {
+#home .menu-bar > ul > li {
     list-style: none;
     display: inline-block;
     margin-left: 35px;
@@ -69,24 +68,103 @@
     font-size: 100%;
 }
 
-#home .menu-bar ul li a {
+#home .menu-bar > ul > li > a {
     text-decoration: none;
     color: #ffffff;
+}
+
+#home .menu-bar > ul > li:hover > a {
+    color: #809492;
 }
 
 #home .menu-bar .lt-green {
     color: #23C9BB;
 }
 
+/* -------- all course - drop down --------------------------------------- */
+
+.all_course {
+    position: relative;
+    cursor: pointer;
+}
+
+.all_course i {
+    margin: 0px 5px;
+    font-size: large;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.space {
+    display: none;
+    /* background-color: #de6718; */
+    position: absolute;
+    left: -15px;
+    height: 35px;
+    width: 200px;
+    z-index: 1;
+}
+
+.sub-menu {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+    left: -15px;
+    top: 55px;
+    padding: 0;
+    width: 200px;
+    border-radius: 5px;
+    z-index: 200;
+}
+
+.sub-menu li {
+    list-style: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px 0px;
+}
+
+.sub-menu li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Inria Sans' sans-serif;
+    font-size: medium;
+    letter-spacing: 0.1rem;
+}
+
+.sub-menu li:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.sub-menu li:hover a {
+    color: #697978;
+}
+
+.all_course:hover .space {
+    display: block;
+}
+
+.all_course:hover .sub-menu {
+    display: block;
+}
+
+/* ------------------------------------------------------- */
+
 #search-box {
     position: relative;
+    width: 269px;
+    height: 60px;
+    overflow: hidden;
 }
 
 #search-box img {
     position: absolute;
     height: 65px;
     right: 0;
-    top: -32.5px;
+    top: 0px;
 }
 
 #hero {
@@ -121,14 +199,37 @@
     }
 
     #home .menu-bar ul li {
-        margin-right: 20px;
+        margin-right: 10px;
         font-size: 80%;
+    }
+
+    .all_course i {
+        font-size: medium;
+    }
+
+    .sub-menu {
+        width: 150px;
+        top: 40px;
+    }
+
+    .space {
+        height: 25px;
+        width: 150px;
+    }
+
+    .sub-menu li a {
+        font-size: small;
+    }
+
+    #search-box {
+        width: 165px;
+        height: 40px;
     }
 
     #search-box img {
         height: 40px;
         right: 0;
-        top: -20px;
+        top: 0;
     }
 
     #hero img {
