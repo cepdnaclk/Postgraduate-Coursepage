@@ -4,7 +4,7 @@
         {% if page.layout == "coursePage" %}
         <div class="path">
             <a href="/">Home</a>
-            <i class="bi bi-chevron-right"></i>
+            <i class="fa fa-chevron-right"></i>
             <span>Course</span>
         </div>
         <img class="logo" src="../assets/img/home_img/Logo.svg" alt="">
@@ -23,8 +23,31 @@
         {% else %}
         <img class="nav-menu" src="../assets/img/home_img/nav_menu.png" alt="">
         <ul class="nav-link">
+            {% if page.layout == "mastersPage" %}
+            <li><a href="/">Home</a></li>
+            <li class="all_course">
+                <a class="lt-green">All Courses<i class="fa fa-chevron-down"></i></a>
+                <div class="space"></div>
+                <ul  class="sub-menu">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Masters</a></li>
+                </ul>
+            </li>
+            {% else %}
             <li><a class="lt-green" href="/">Home</a></li>
-            <li><a href="/masters">All Courses</a></li>
+            <li class="all_course">
+                <a>All Courses<i class="fa fa-chevron-down"></i></a>
+                <div class="space"></div>
+                <ul  class="sub-menu">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="/masters">Masters</a></li>
+                </ul>
+            </li>
+            <!-- <li><a class="lt-green" href="/">Home</a></li>
+            <li><a href="/masters">All Courses</a></li> -->
+            {% endif %}
             <li><a href="https://people.ce.pdn.ac.lk/staff/academic/" target="_blank">Staff</a></li>
         </ul>
         <div id="search-box">
