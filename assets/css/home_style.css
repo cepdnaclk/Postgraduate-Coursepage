@@ -118,7 +118,7 @@
     border-radius: 5px;
     z-index: 200;
     transform: translateY(-10px);
-    transition: transform 0.4s ease;
+    transition: transform 0.4s ease, opacity 0.4s ease-in;
 }
 
 .sub-menu li {
@@ -276,7 +276,6 @@
         background: #23c9bbe2;
         padding: 20px 20px 50px 20px;
         z-index: 100;
-        /* transition: display 5s ease-in; */
     }
 
     #home .menu-bar > ul.active {
@@ -297,6 +296,7 @@
     .all_course:hover .sub-menu {
         opacity: 0;
         visibility: hidden;
+        transform: translateY(-20px);
     }
 
     .all_course.clicked .sub-menu {
