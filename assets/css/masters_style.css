@@ -89,7 +89,7 @@
 }
 
 .all_course i {
-    margin: 0px 5px;
+    margin: 0px 6px;
     font-size: large;
     display: inline-flex;
     justify-content: center;
@@ -107,17 +107,18 @@
 }
 
 .sub-menu {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     background-color: rgba(255, 255, 255, 0.15);
     position: absolute;
-    flex-direction: column;
-    justify-content: space-around;
     left: -15px;
     top: 55px;
     padding: 0;
     width: 200px;
     border-radius: 5px;
     z-index: 200;
+    transform: translateY(-10px);
+    transition: transform 0.4s ease;
 }
 
 .sub-menu li {
@@ -148,7 +149,9 @@
 }
 
 .all_course:hover .sub-menu {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
 }
 
 /* ------------------------------------------------------- */
@@ -198,8 +201,8 @@
         overflow: visible;
     }
 
-    #home .menu-bar ul li {
-        margin-right: 10px;
+    #home .menu-bar > ul > li {
+        margin: 0px 10px 0px 22px;
         font-size: 80%;
     }
 
@@ -262,7 +265,7 @@
         color: #196962;
     }
 
-    #home .menu-bar ul {
+    #home .menu-bar > ul {
         position: absolute;
         width: 100%;
         display: none;
@@ -276,13 +279,47 @@
         /* transition: display 5s ease-in; */
     }
 
-    #home .menu-bar ul.active {
+    #home .menu-bar > ul.active {
         display: flex;
     }
 
-    #home .menu-bar ul li {
+    #home .menu-bar > ul > li {
+        margin: 0px;
         margin-top: 30px;
         font-size: 100%;
+    }
+
+    #home .menu-bar > ul > li:hover > a {
+        font-size: 110%;
+        color: #30746d;
+    }
+
+    .all_course:hover .sub-menu {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .all_course.clicked .sub-menu {
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+        left: -50%;
+        top: 10px;
+        width: 200%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .all_course.clicked .sub-menu li:hover {
+        text-align: center;
+        width: 100%;
+    }
+
+    .all_course i {
+        margin: 0px 0px 0px 10px;
     }
 
     #hero img {
