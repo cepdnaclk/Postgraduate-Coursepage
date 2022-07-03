@@ -2,71 +2,80 @@
 layout: default
 ---
 
-<!-- <div class="container-fluid">
-    <div class="row">
-        <div class="container col-sm-12 col-md-10 col-lg-10 mx-auto mt-3 py-2">
-            
-        </div>
-    </div>
-</div> -->
-
 <div class="courseCard">
 
     <div class="col-12 text-center mt-5 mb-5">
         <span class="text-uppercase fw-bold h6 d-block" style="color: #1EB2A6;">COURSES</span>
-        <h1 class="fw-bold mb-5 pb-2 section-title">Browse Our Postgraduate Courses</h2>
+        <h1 class="fw-bold pb-2 section-title">Browse Our Postgraduate Courses</h2>
     </div>
 
     <div class="container-md dropdown pb-0">
         <div class="row g-3">
             <div class="col-12 col-md-6 col-lg-4 px-3">
-                <button class="btn btn-secondary dropdown-toggle mx-auto" type="button" id="book-dropdown" data-bs-toggle="dropdown">
-                    Courses
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Core Courses</a></li>
-                    <li><a class="dropdown-item" href="#">Technical Electives</a></li>
-                    <li><a class="dropdown-item" href="#">Research Topics</a></li>
-                  </ul>
+                <button class="btn btn-secondary dropdown-toggle mx-auto" type="button" id="book-dropdown"
+                    data-bs-toggle="dropdown">
+                    <label>Courses</label>
+                    <i class="fa fa-chevron-down"></i>
+                    <label class="lbl-course-category">Course Category</label>
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">Core Courses</li>
+                    <li class="dropdown-item">Technical Electives</li>
+                    <li class="dropdown-item">Research Topics</li>
+                </ul>
             </div>
         </div>
     </div>
 
     <div class="container-md">
-        
+
         <div class="row g-3">
             {%- for each in site.data.course_cards -%}
             <div class="col-12 col-md-6 col-lg-4 p-3 m-0">
                 <div class="card mx-auto">
-                    <div class="circle">
-                        <div class="content">
-                            <h3>{{ each.course_type}}</h3>
+                    <div class="row">
+                        <div class="circle col-4">
+                            <div class="content">
+                                <h3>{{ each.course_type}}</h3>
+                            </div>
+                        </div>
+
+                        <div class="card-body  col-8">
+                            <h3>{{ each.course_code}}</h3>
+                            <h3>{{ each.course_title}}</h3>
+                            <!-- <p>{{ each.module_type}}</p> -->
+                            <p class="crs_credits">{{ each.course_credits}}</p>
+                            <div class="crs_coordinator">
+                                <div class="crs_coordinator_img">
+                                    <img src="{{ each.course_coordinator_img}}" alt="Prof">
+                                </div>
+                                <p class="crs_coordinator_name">by {{ each.course_coordinator}}</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="card-body">
-                        <h3>{{ each.course_code}}</h3>
-                        <h3>{{ each.course_title}}</h3>
-                        <!-- <p>{{ each.module_type}}</p> --><br>
-                        <p color="#1EB2A6">{{ each.course_credits}}</p>
-                        <p>by {{ each.course_coordinator}}</p>
-                        <a href="{{ each.coursePage_url}}" class="btn btn-outline-primary btn-viewMore">View More</a>
-                    </div>  
+                    <a href="{{ each.coursePage_url}}" class="btn btn-outline-primary btn-viewMore mx-auto">View
+                        More</a>
                 </div>
             </div>
             {%- endfor -%}
-            </div>
+
+            {% assign curr_pages = 1 %}
 
             {% if site.data.course_cards.size > 6 %}
-            {% assign pages =  site.data.course_cards.size | divided_by: 6.0 | ceil %}
+            {% assign pages = site.data.course_cards.size | divided_by: 6.0 | ceil %}
             <div class="pagination d-flex justify-content-center mx-auto mt-5">
-                <li class="page-item previous-page"><a class=page-link href="#">Prev</a></li>
+                <li class="page-item previous-page"><a class="page-link" href="#"><i class="fa fa-chevron-left"></i></a></li>
                 {% for count in (1..pages) %}
-                <li class="page-item current-page"><a class=page-link href="#">{{ count }}</a></li>
+                {% if curr_pages == count %}
+                <li class="page-item current-page"><a class="page-link current"  href="#">{{ count }}</a></li>
+                {% else %}
+                <li class="page-item current-page"><a class="page-link" href="#">{{ count }}</a></li>
+                {% endif %}
                 {% endfor %}
-                <li class="page-item next-page"><a class=page-link href="#">Next</a></li>
+                <li class="page-item next-page"><a class="page-link" href="#"><i class="fa fa-chevron-right"></i></a></li>
             </div>
             {% endif %}
         </div>
-    </div>     
+    </div>
 </div>

@@ -2,9 +2,10 @@
     {
         "course_type" : "TE",
         "course_code" : "COXXX",
-        "course_title": "Bio Computing",
+        "course_title": "Complex Reactive Systems and Process Automation",
         "module_type" : "Module Type 1",
         "course_credits" : "3 Credits",
+        "course_coordinator_img" : "../assets/img/staff/img1.webp",
         "course_coordinator" : "Course Coordinator",
         "coursePage_url" : "/course"
     },
@@ -14,69 +15,77 @@
         "course_title": "Bio Computing",
         "module_type" : "Module Type 2",
         "course_credits" : "3 Credits",
+        "course_coordinator_img" : "../assets/img/staff/img2.webp",
         "course_coordinator" : "Course Coordinator",
         "coursePage_url" : "#"
     },
     {
         "course_type" : "Core",
         "course_code" : "COXXX",
-        "course_title": "Bio Computing",
+        "course_title": "Formal Models and Verification",
         "module_type" : "Module Type 2",
         "course_credits" : "3 Credits",
+        "course_coordinator_img" : "../assets/img/staff/img3.jpeg",
+        "course_coordinator" : "Course Coordinator",
+        "coursePage_url" : "#"
+    },
+    {
+        "course_type" : "Res",
+        "course_code" : "COXXX",
+        "course_title": "Image Processing and Computer Vision",
+        "module_type" : "Module Type 2",
+        "course_credits" : "3 Credits",
+        "course_coordinator_img" : "../assets/img/staff/img2.webp",
+        "course_coordinator" : "Course Coordinator",
+        "coursePage_url" : "#"
+    },
+    {
+        "course_type" : "Res",
+        "course_code" : "COXXX",
+        "course_title": "Operating Systems and VM Monitors",
+        "module_type" : "Module Type 2",
+        "course_credits" : "3 Credits",
+        "course_coordinator_img" : "../assets/img/staff/img1.webp",
         "course_coordinator" : "Course Coordinator",
         "coursePage_url" : "#"
     },
     {
         "course_type" : "Core",
         "course_code" : "COXXX",
+        "course_title": "Software Defined Networks (SDN)",
+        "module_type" : "Module Type 2",
+        "course_credits" : "3 Credits",
+        "course_coordinator_img" : "../assets/img/staff/img3.jpeg",
+        "course_coordinator" : "Course Coordinator",
+        "coursePage_url" : "#"
+    },
+    {
+        "course_type" : "TE",
+        "course_code" : "COXXX",
         "course_title": "Bio Computing",
         "module_type" : "Module Type 2",
         "course_credits" : "3 Credits",
+        "course_coordinator_img" : "../assets/img/staff/img3.jpeg",
         "course_coordinator" : "Course Coordinator",
         "coursePage_url" : "#"
     },
     {
         "course_type" : "Core",
         "course_code" : "COXXX",
-        "course_title": "Bio Computing",
+        "course_title": "Image Processing and Computer Vision",
         "module_type" : "Module Type 2",
         "course_credits" : "3 Credits",
+        "course_coordinator_img" : "../assets/img/staff/img2.webp",
         "course_coordinator" : "Course Coordinator",
         "coursePage_url" : "#"
     },
     {
-        "course_type" : "Core",
+        "course_type" : "TE",
         "course_code" : "COXXX",
-        "course_title": "Bio Computing",
+        "course_title": "Formal Models and Verification",
         "module_type" : "Module Type 2",
         "course_credits" : "3 Credits",
-        "course_coordinator" : "Course Coordinator",
-        "coursePage_url" : "#"
-    },
-    {
-        "course_type" : "Core",
-        "course_code" : "COXXX",
-        "course_title": "Bio Computing",
-        "module_type" : "Module Type 2",
-        "course_credits" : "3 Credits",
-        "course_coordinator" : "Course Coordinator",
-        "coursePage_url" : "#"
-    },
-    {
-        "course_type" : "Core",
-        "course_code" : "COXXX",
-        "course_title": "Bio Computing",
-        "module_type" : "Module Type 2",
-        "course_credits" : "3 Credits",
-        "course_coordinator" : "Course Coordinator",
-        "coursePage_url" : "#"
-    },
-    {
-        "course_type" : "Core",
-        "course_code" : "COXXX",
-        "course_title": "Bio Computing",
-        "module_type" : "Module Type 2",
-        "course_credits" : "3 Credits",
+        "course_coordinator_img" : "../assets/img/staff/img1.webp",
         "course_coordinator" : "Course Coordinator",
         "coursePage_url" : "#"
     }

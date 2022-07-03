@@ -1,17 +1,4 @@
-@font-face {
-    font-family: Araboto;
-    src: url(../webfonts/Araboto-Normal-400.ttf);
-}
-
-@font-face {
-    font-family: Poppins;
-    src: url(../webfonts/Poppins-Light.ttf);
-}
-
-@font-face {
-    font-family: Fabrikat;
-    src: url(../webfonts/Fabrikat-Normal-Medium.otf);
-}
+@import url(fonts.css);
 
 .vh-50{
     min-height: 50vh!important;

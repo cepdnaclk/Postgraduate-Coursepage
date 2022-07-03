@@ -1,0 +1,44 @@
+@font-face {
+    font-family: Araboto;
+    src: url(../fonts/Araboto-Normal-400.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: Fabrikat;
+    src: url(../fonts/Fabrikat-Normal-Medium.otf);
+}
+
+@font-face {
+    font-family: Inria Sans;
+    src: url(../fonts/InriaSans-Light.ttf);
+}
+
+@font-face {
+    font-family: Cuprum;
+    src: url(../fonts/Cuprum-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Titan One;
+    src: url(../fonts/TitanOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Alatsi;
+    src: url(../fonts/Alatsi-Regular.ttf);
+}
+
+@font-face {
+    font-family: Alata;
+    src: url(../fonts/Alata-Regular.ttf);
+}
+
+@font-face {
+    font-family: Imprima;
+    src: url(../fonts/Imprima-Regular.ttf);
+}
