@@ -9,6 +9,7 @@
 
 {% if page.layout == "coursePage" %}
 <link href="{{ '/assets/css/course_style.css' | relative_url }}" rel="stylesheet">
+<link href="{{ '/assets/css/owl.carousel.min.css' | relative_url }}" rel="stylesheet">
 {% elsif page.layout == "mastersPage" %}
 <link href="{{ '/assets/css/masters_style.css' | relative_url }}" rel="stylesheet">
 {% else %}
@@ -34,4 +35,10 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 <script src="../assets/js/jquery.counterup.min.js"></script>
 <script src="{{ '/assets/js/index.js' | relative_url }}" ></script>
+
+{% if page.layout == "coursePage" %}
+<script src="{{ '/assets/js/owl.carousel.min.js' | relative_url }}" ></script>
+<script src="{{ '/assets/js/course.js' | relative_url }}" ></script>
+{% else %}
 <script src="{{ '/assets/js/home_js.js' | relative_url }}" ></script>
+{% endif %}

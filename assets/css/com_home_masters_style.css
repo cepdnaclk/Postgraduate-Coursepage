@@ -15,7 +15,7 @@
     background: url(../img/home_img/bg-home.jpg);
     background-size: cover;
     background-attachment: fixed;
-    background-color:rgb(64, 64, 64, 0.4);
+    background-color:rgb(64, 64, 64, 0.55);
     background-blend-mode: overlay;
 }
 
@@ -145,7 +145,7 @@
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-.sub-menu li:hover a {
+.sub-menu a:hover {
     color: #697978;
 }
 

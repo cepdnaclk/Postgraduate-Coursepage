@@ -1,3 +1,5 @@
+/* @import url(fonts.css); */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,7 +15,7 @@
     background: url(../img/home_img/bg-course.jpg);
     background-size: cover;
     background-attachment: fixed;
-    background-color:rgb(64, 64, 64, 0.5);
+    background-color: rgb(64, 64, 64, 0.7);
     background-blend-mode: overlay;
 }
 
@@ -29,13 +31,16 @@
 }
 
 #home .path a {
+    font-family: 'Cuprum', sans-serif;
+    font-style: normal;
+    font-weight: 700;
     text-decoration: none;
     color: white;
     font-size: large;
 }
 
 #home .path a:hover {
-    color: #1EB2A6;
+    color: #b7c9c7;
 }
 
 #home .path i {
@@ -47,6 +52,9 @@
 }
 
 #home .path span {
+    font-family: 'Cuprum', sans-serif;
+    font-style: normal;
+    font-weight: 700;
     color: #1EB2A6;
     font-size: large;
 }
@@ -163,7 +171,7 @@
     #home .path span {
         font-size: medium;
     }
-    
+
     #search-box {
         height: 70px;
     }
@@ -205,7 +213,7 @@
     #home .path span {
         font-size: small;
     }
-    
+
     #search-box {
         height: 80px;
     }
@@ -222,7 +230,7 @@
 
 /* screen <= 500px */
 @media (max-width: 500px) {
-    
+
     #home .logo {
         width: 50%;
     }
@@ -236,7 +244,7 @@
     #home .menu-bar #course-name {
         font-size: 15px;
     }
-    
+
     #search-box {
         height: 100px;
         overflow: hidden;
@@ -256,55 +264,220 @@
 
 /* Course Cards ---------------------------------------------------------------*/
 
-.courseCard .container-md{
+.container-md {
     margin-top: 60px;
-  }
-  
-  .courseCard .card{
+    margin-bottom: 80px;
+}
+
+.section-title {
+    margin-bottom: 8%;
+}
+
+.card {
     display: flex;
-    margin: 1. 0em;
-    margin-bottom: 2ex;
-    border-radius: 10px;
+    height: 100%;
     background: #fff;
-    width: 18rem;
     border: none;
-  }
-  
-  .courseCard .card:hover{
-    transform: scale(1.02);
+}
+
+.left.card {
+    padding: 5%;
+}
+
+.right.card {
+    padding: 2% 4% 2% 4%;
+}
+
+.right.card .col-2 {
+    padding: 4% 3% 3% 3%;
+}
+
+.card:hover {
+    transform: scale(1.008);
     background-color: rgb(255, 255, 255);
-  }
-  
-  .card .card-body h3{
-    font-family: 'Alatsi';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 38px;
-    letter-spacing: 0.1em;
-    color: #535353;
-  }
-  
-  .circle{
-    margin-top: 3%;
-    margin-left: 3%;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: #1EB2A6;
-  }
-  
-  .circle .content{   
-    margin-top: 30%;
-    font-family: 'Titan One';
+}
+
+.card .card-body h3 {
+    font-family: 'Alatsi', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 0.1em;
+    color: #535353;
+    padding: 0;
+}
+
+.left.card .card-body ul {
+    list-style: none;
+    padding-left: 2%;
+}
+
+.right.card .card-body ul {
+    list-style: none;
+    padding-left: 1%;
+}
+
+.card .card-body ul > li {
+    font-family: 'Alatsi', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    margin-bottom: 5px;
+    color: #7C7C7C;
+}
+
+.card .card-body ul li i {
+    color: #1EB2A6;
+    padding-right: 10px;
+}
+
+.right.card img {
+    margin-bottom: auto;
+}
+
+.right.card .card-body p {
+    font-family: 'Alata', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #777777;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 3% 0 4%;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background: #1EB2A6;
+}
+
+.circle .content {
     text-align: center;
     letter-spacing: 0.1em;
     color: #FFFFFF;
     transform: rotate(-5deg);
-  }
+}
+
+.circle .content h3 {
+    font-family: 'Titan One', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.crs_credits {
+    font-family: 'Alata', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 28px;
+    color: #1EB2A6;
+}
+
+.crs_coordinator {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.crs_coordinator_img {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.crs_coordinator_img img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.crs_coordinator_img img:hover {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 0;
+    top: -100px;
+    box-shadow: 5px 5px #53535390;
+}
+
+.crs_coordinator_name {
+    font-family: 'Alata', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    color: #7E7E7E;
+}
+
+.btn-viewMore {
+    font-family: 'Cuprum', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    border-color: #1EB2A6;
+    color: #ffffff;
+    background-color: #1EB2A6;
+    border-width: 1px;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+.btn-viewMore:hover {
+    border-color: #1EB2A6;
+    background-color: #1eb2a6cf;
+    color: #ffffffe1;
+}
+
+/* Counter Area - Course Page ------------------------------------------------- */
+.counter_area .counter_bg {
+    background-image: url(../img/home_img/stat-bar.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+    padding: 64px 0;
+    background-size: cover;
+    background-color: rgb(67, 67, 67);
+    background-blend-mode: overlay;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .counter_area .counter_bg {
+        padding: 64px 25px;
+    }
+}
+
+.counter_area .single_counter .icon {
+    margin-right: 10px;
+}
+
+.counter_area .single_counter .icon i {
+    font-size: 70px;
+    color: #fff;
+}
+
+.counter_area .single_counter .events h3 {
+    font-size: 40px;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.counter_area .single_counter .events p {
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 200;
+    color: #fff;
+}
 
 /* Profile Cards ---------------------------------------------------------------*/
 
@@ -325,7 +498,7 @@
     top: -50px;
     height: 0;
     width: 150%;
-    background-color: #2c9088;
+    background-color: #3f9b8d46;
     z-index: -1;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
@@ -333,13 +506,13 @@
 }
 
 .profileCard .container .card {
-    width: 280px;
+    /* width: 280px; */
     height: 365px;
     overflow: hidden;
     z-index: 3;
     transition: all 0.5s ease-in-out;
     border: none;
-    
+    margin: 50px 15px 90px 15px;
 }
 
 .profileCard .container .card:hover::before {
@@ -354,7 +527,7 @@
 }
 
 .profileCard .container .card:hover .img-container {
-    border: 10px solid #2c9088;
+    border: 10px solid #3f9b8d46;
 }
 
 .profileCard .container .card .img-container img {
@@ -366,23 +539,30 @@
 }
 
 .profileCard .container .card:hover .img-container img {
-    box-shadow: 0 0 0 14px #f7f5ec;
+    box-shadow: 0 0 0 14px #becccaab;
     transform: scale(0.8);
 }
 
 .profileCard .container .card .h4 {
+    font-family: 'Alatsi', sans-serif;
+    font-style: normal;
+    font-weight: 400;
     margin-bottom: 5px !important;
     pointer-events: none;
 }
 
 .profileCard .container .card .designation {
+    font-family: 'Alatsi', sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 0.85rem;
     letter-spacing: 2px;
     pointer-events: none;
+    color: #1EB2A6;
 }
 
 .profileCard .container .card ul {
-    background-color: #2c9088;
+    background-color: #3f9b8d46;
     transition: all 0.5s ease-in-out;
     transform: translateY(100px);
 }
@@ -408,55 +588,72 @@
     color: #1369ce;
 }
 
-.btn-viewProfile{
-    border-color: #4c8580;;
-    border-width:2px;
-    color: #1f857d;
+.btn-viewProfile {
+    border-color: #3f9b8d46;
+    border-width: 2px;
+    color: #3f9b8d79;
 }
 
-.btn-viewProfile:hover{
-    border-color: #2c9088;
-    background-color: #2c9088;
-    border-width:2px;
+.btn-viewProfile:hover {
+    border-color: #3f9b8d46;
+    background-color: #3f9b8d46;
+    border-width: 2px;
     color: #ffffff;
 }
 
-/* Counter Area - Course Page ------------------------------------------------- */
-.counter_area .counter_bg {
-  background-image: url(../img/home_img/stat-bar.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  overflow: hidden; 
-  padding: 64px 0;
-  background-size: cover; 
-  background-color:rgb(67, 67, 67); 
-  background-blend-mode: overlay;
+.slider {
+    margin-bottom: 20px;
+    position: relative;
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
-  .counter_area .counter_bg {
-    padding: 64px 25px;
-  }
+.slider .owl-item.active.center .slider-card {
+    transform: scale(1.05);
+    opacity: 1;
+    background-color: #1EB2A6;
 }
 
-.counter_area .single_counter .icon {
-  margin-right: 10px;
+.slider .owl-item.active.center .slider-card .h4 {
+    color: white;
 }
 
-.counter_area .single_counter .icon i {
-  font-size: 70px;
-  color: #fff;
+.slider .owl-item.active.center .slider-card .designation {
+    color: white;
 }
 
-.counter_area .single_counter .events h3 {
-  font-size: 40px;
-  margin-bottom: 0;
-  color: #fff;
+.slider .owl-item.active.center .slider-card .btn-viewProfile {
+    border-color: #ffffff;
+    color: #ffffff;
 }
 
-.counter_area .single_counter .events p {
-  margin-bottom: 10px;
-  font-size: 17px;
-  font-weight: 200;
-  color: #fff;
+.slider-card {
+    transform: scale(0.995);
+    /* opacity: 0.5; */
+    transition: all 0.3s;
+}
+
+.owl-nav .owl-next {
+    position: absolute;
+    top: calc(50% - 30px);
+    right: -10px;
+    opacity: 1;
+    font-size: 30px !important;
+    color: #7C7C7C !important;
+    z-index: 1;
+}
+
+.owl-nav .owl-prev {
+    position: absolute;
+    top: calc(50% - 30px);
+    left: -10px;
+    opacity: 1;
+    font-size: 30px !important;
+    color: #7C7C7C !important;
+    z-index: 1;
+}
+
+.owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    color: #1EB2A6;
+    z-index: 100;
 }
