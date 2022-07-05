@@ -1,4 +1,8 @@
+{% if page.layout == "homePage" %}
+<footer class="text-white" style="background-color: #1f857d;">
+{% else %}
 <footer class="mt-5 text-white" style="background-color: #1f857d;">
+{% endif %}
     <section class="pt-1">
         <div class="container mt-5 mb-2">
             <div class="row mt-2">
@@ -51,7 +55,7 @@
        
     </div>
 
-    <div class="text-center text-dark p-3 medium " style="background-color: #dddddd;">
+    <div class="text-center text-dark p-3 medium " style="background-color: #dddddd; font-family: 'Inria Sans', sans-serif; font-style: normal; font-weight: 700;">
         Copyright &copy; {{ site.time | date: '%Y'  }}
         <a class="text-dark btn-link" href="">Department of Computer Engineering - University of Peradeniya</a>
     </div>
