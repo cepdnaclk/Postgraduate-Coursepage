@@ -1,0 +1,29 @@
+[
+    {
+        "course_type" : "Core Course",
+        "course_code" : "CO600",
+        "course_title" : "Database Designing",
+        "course_credits" : "3",
+        "course_coordinator_img" : "https://people.ce.pdn.ac.lk/images/staff/academic-staff/asitha-bandaranayake.jpg",
+        "course_coordinator" : "Dr. Asitha Bandaranayake",
+        "coursePage_url" : "courses/co600/"
+    },
+    {
+        "course_type" : "Core Course",
+        "course_code" : "CO601",
+        "course_title" : "Bio Computing",
+        "course_credits" : "3",
+        "course_coordinator_img" : "https://people.ce.pdn.ac.lk/images/staff/academic-staff/amila-indika.jpg",
+        "course_coordinator" : "Mr. Amila Indika",
+        "coursePage_url" : "courses/co601/"
+    },
+    {
+        "course_type" : "Core Course",
+        "course_code" : "CO603",
+        "course_title" : "Complex Reactive Systems and Process Automation",
+        "course_credits" : "3",
+        "course_coordinator_img" : "https://people.ce.pdn.ac.lk/images/staff/academic-staff/janaka-alawatugoda.jpg",
+        "course_coordinator" : "Dr. Janaka Alawatugoda",
+        "coursePage_url" : "courses/co603/"
+    }
+]

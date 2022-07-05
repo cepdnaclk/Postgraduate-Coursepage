@@ -1,0 +1,480 @@
+{
+    "alawatugoda": {
+        "name": "Dr. Janaka Alawatugoda",
+        "designation": "Senior Lecturer",
+        "email": "alawatugoda@eng.pdn.ac.lk",
+        "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/janaka-alawatugoda/",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/janaka-alawatugoda.jpg",
+        "urls": {
+            "linkedin": "https://www.linkedin.com/in/janaka-alawatugoda-53294034/",
+            "google_scholar": "https://scholar.google.com/citations?user=TJWRzj4AAAAJ&hl=en",
+            "researchgate": "https://www.researchgate.net/profile/Janaka-Alawatugoda-2",
+            "website": "",
+            "orcid": "https://orcid.org/0000-0001-9431-5836"
+        },
+        "research_interests": [
+            "Cryptography",
+            "Complexity",
+            "Information Security"
+        ]
+    },
+    "amilaindika": {
+        "name": "Mr. Amila Indika",
+        "designation": "Lecturer",
+        "email": "amilaindika@eng.pdn.ac.lk",
+        "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/amila-indika/",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/amila-indika.jpg",
+        "urls": {
+            "linkedin": "",
+            "google_scholar": "",
+            "researchgate": "",
+            "website": "",
+            "orcid": ""
+        },
+        "research_interests": [
+            "Applied Machine Learning",
+            "Time-series Analysis",
+            "Mathematics"
+        ]
+    },
+    "anj.wanigarathne": {
+        "name": "Anjalee Wanigarathne",
+        "designation": "Temporary Instructor",
+        "email": "anj.wanigarathne@eng.pdn.ac.lk",
+        "profile_url": "#",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/temporary-academic-staff/anjalee.jpg",
+        "urls": {},
+        "research_interests": {}
+    },
+    "arjunat": {
+        "name": "Arjuna Thennakoon",
+        "designation": "Temporary Instructor",
+        "email": "arjunat@eng.pdn.ac.lk",
+        "profile_url": "#",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/temporary-academic-staff/arjuna.jpg",
+        "urls": {},
+        "research_interests": {}
+    },
+    "asithab": {
+        "name": "Dr. Asitha Bandaranayake",
+        "designation": "Senior Lecturer",
+        "email": "asithab@eng.pdn.ac.lk",
+        "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/asitha-bandaranayake/",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/asitha-bandaranayake.jpg",
+        "urls": {
+            "linkedin": "https://www.linkedin.com/in/asithab/",
+            "google_scholar": "https://scholar.google.com/citations?hl=en&user=sf6MaF4AAAAJ",
+            "researchgate": "https://www.researchgate.net/profile/Asitha-Bandaranayake-3",
+            "website": "",
+            "orcid": "https://orcid.org/0000-0002-9737-1574"
+        },
+        "research_interests": [
+            "Computer Networking",
+            "Wireless Networking",
+            "IoT",
+            "Artificial Intelligence",
+            "Bioinformatics",
+            "Computer Networks",
+            "Wireless Mesh Networking"
+        ]
+    },
+    "chathurimalee": {
+        "name": "Chathuri Aththanayake",
+        "designation": "Temporary Instructor",
+        "email": "chathurimalee@eng.pdn.ac.lk",
+        "profile_url": "#",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/temporary-academic-staff/chathuri.jpg",
+        "urls": {},
+        "research_interests": {}
+    },
+    "damayanthiherath": {
+        "name": "Dr. Damayanthi Herath",
+        "designation": "Senior Lecturer",
+        "email": "damayanthiherath@eng.pdn.ac.lk",
+        "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/damayanthi-herath/",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/damayanthi-herath.jpg",
+        "urls": {
+            "linkedin": "https://www.linkedin.com/in/damayanthi-herath/",
+            "google_scholar": "https://scholar.google.com/citations?user=G2jUV5IAAAAJ&hl=en",
+            "researchgate": "https://www.researchgate.net/profile/Damayanthi-Herath",
+            "website": "https://damayanthiherath.wordpress.com/",
+            "orcid": "https://orcid.org/0000-0002-2044-7737"
+        },
+        "research_interests": [
+            "Data Engineering",
+            "Machine Learning",
+            "Metagenomics",
+            "Computational Biology",
+            "Edutainment"
+        ]
+    },
+    "dewasuren": {
+        "name": "Dr. Shirley Dewasurendra",
+        "designation": "Senior Lecturer",
+        "email": "dewasuren@gmail.com",
+        "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/shirley-dewasurendra/",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/shirley-dewasurendra.jpg",
+        "urls": {
+            "linkedin": "",
+            "google_scholar": "https://scholar.google.com/citations?user=tRp6g8EAAAAJ&hl=en",
+            "researchgate": "https://www.researchgate.net/profile/Shirley-Dewasurendra",
+            "website": "",
+            "orcid": ""
+        },
+        "research_interests": [
+            "Verification of Complex Reactive Systems",
+            "Distributed Supervisory Control",
+            "Integrated Manufacturing Systems",
+            "Testing Automotive Systems",
+            "Formal Verification &amp; Validation",
+            "Agile/Holonic/Flexible Manufacturing",
+            "Shop Floor Control Systems",
+            "Industrial/Process Automation: PLC and PLD based",
+            "Fault Diagnosis",
+            "Enterprise Modelling/Integration"
+        ]
+    },
+    "dhammika": {
+        "name": "Dr. Dhammika Elkaduwe",
+        "designation": "Senior Lecturer",
+        "email": "dhammika@eng.pdn.ac.lk",
+        "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/dhammika-elkaduwe/",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/dhammika-elkaduwe.png",
+        "urls": {
+            "linkedin": "https://lk.linkedin.com/in/dhammika-elkaduwe-74030613",
+            "google_scholar": "https://scholar.google.com/citations?user=zLUPMFkAAAAJ&hl=en",
+            "researchgate": "https://www.researchgate.net/profile/Dhammika-Elkaduwe",
+            "website": "",
+            "orcid": ""
+        },
+        "research_interests": [
+            "Operating Systems",
+            "Embedded Systems",
+            "Formal Verification",
+            "GPU programming"
+        ]
+    },
+    "dilshanik": {
+        "name": "Dilshani Karunarathna",
+        "designation": "Temporary Instructor",
+        "email": "dilshanik@eng.pdn.ac.lk",
+        "profile_url": "https://people.ce.pdn.ac.lk/students/e15/173",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/temporary-academic-staff/dilshani.jpg",
+        "urls": {},
+        "research_interests": {}
+    },
+    "imeshuek": {
+        "name": "Imesh Ekanayake",
+        "designation": "Temporary Instructor",
+        "email": "imeshuek@eng.pdn.ac.lk",
+        "profile_url": "https://people.ce.pdn.ac.lk/students/e15/092",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/temporary-academic-staff/imesh.png",
+        "urls": {},
+        "research_interests": {}
+    },
+    "isurunawinne": {
+        "name": "Dr. Isuru Nawinne",
+        "designation": "Senior Lecturer",
+        "email": "isurunawinne@eng.pdn.ac.lk",
+        "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/isuru-nawinne/",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/isuru-nawinne.png",
+        "urls": {
+            "linkedin": "https://www.linkedin.com/in/isuru-nawinne-73302833/",
+            "google_scholar": "https://scholar.google.com/citations?hl=en&user=8qqGvuwAAAAJ",
+            "researchgate": "https://www.researchgate.net/profile/Isuru-Nawinne",
+            "website": "",
+            "orcid": ""
+        },
+        "research_interests": [
+            "Computer Architecture",
+            "Design Automation of Microprocessor Systems",
+            "FPGA-based hardware acceleration",
+            "Robotics and Multi-agent Intelligent Systems",
+            "Biomedical Engineering"
+        ]
+    },
+    "kalaniu": {
+        "name": "Kalani Hansima",
+        "designation": "Temporary Instructor",
+        "email": "kalaniu@eng.pdn.ac.lk",
+        "profile_url": "#",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/temporary-academic-staff/kalani.jpeg",
+        "urls": {},
+        "research_interests": {}
+    },
+    "kamalanath": {
+        "name": "Dr. Eng. Kamalanath Samarakoon",
+        "designation": "Senior Lecturer",
+        "email": "kamalanath@eng.pdn.ac.lk",
+        "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/kamalanath-samarakoon/",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/kamalanath-samarakoon.png",
+        "urls": {
+            "linkedin": "https://www.linkedin.com/in/kamalanath-samarakoon-7188549/",
+            "google_scholar": "https://scholar.google.com/citations?user=DsG-K0sAAAAJ&hl=en",
+            "researchgate": "https://www.researchgate.net/profile/Kamalanath-Samarakoon",
+            "website": "http://kamalanath.samarakoon.info/",
+            "orcid": ""
+        },
+        "research_interests": [
+            "Supervisory Control and Data Acquisition",
+            "Computer Control in Power Systems",
+            "Industrial Control Systems and Smart Systems",
+            "Mobile Applications for Education",
+            "Image Processing",
+            "Data Mining in Power System Operation"
+        ]
+    },
+    "kc43224jayasinghe": {
+        "name": "Kanchana Jayasinghe",
+        "designation": "Temporary Instructor",
+        "email": "kc43224jayasinghe@eng.pdn.ac.lk",
+        "profile_url": "#",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/temporary-academic-staff/kanchana.jpg",
+        "urls": {},
+        "research_interests": {}
+    },
+    "kesharaw": {
+        "name": "Keshara Weerasinghe",
+        "designation": "Temporary Instructor",
+        "email": "kesharaw@eng.pdn.ac.lk",
+        "profile_url": "https://people.ce.pdn.ac.lk/students/e15/383",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/temporary-academic-staff/keshara.jpg",
+        "urls": {},
+        "research_interests": {}
+    },
+    "lankaniperera": {
+        "name": "Poornima Lankani",
+        "designation": "Temporary Instructor",
+        "email": "lankaniperera@eng.pdn.ac.lk",
+        "profile_url": "",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/temporary-academic-staff/poornima.jpg",
+        "urls": {},
+        "research_interests": {}
+    },
+    "mahanamaw": {
+        "name": "Dr. Mahanama Wickramasinghe",
+        "designation": "Senior Lecturer",
+        "email": "mahanamaw@eng.pdn.ac.lk",
+        "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/mahanama-wickramasinghe/",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/mahanama-wickramasinghe.jpg",
+        "urls": {
+            "linkedin": "https://www.linkedin.com/in/mahanama",
+            "google_scholar": "https://scholar.google.com/citations?hl=en&user=kuoZpZEAAAAJ",
+            "researchgate": "https://www.researchgate.net/profile/Mahanama-Wickramsinghe",
+            "website": "",
+            "orcid": ""
+        },
+        "research_interests": [
+            "Computer Architecture",
+            "Memory System Optimisation",
+            "Micro-architectural improvements in Processor Systems",
+            "Embedded Systems",
+            "Energy Efficient Computing"
+        ]
+    },
+    "manjula.sandirigama": {
+        "name": "Dr. Manjula Sandirigama",
+        "designation": "Senior Lecturer",
+        "email": "manjula.sandirigama@eng.pdn.ac.lk",
+        "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/manjula-sandirigama/",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/manjula-sandirigama.png",
+        "urls": {
+            "linkedin": "https://lk.linkedin.com/in/manjula-sandirigama-0622784",
+            "google_scholar": "https://scholar.google.com/citations?hl=en&user=qpmlrL0AAAAJ",
+            "researchgate": "",
+            "website": "",
+            "orcid": ""
+        },
+        "research_interests": [
+            "Secure Protocols",
+            "Intellectual Property",
+            "Data Security",
+            "Technology and Law"
+        ]
+    },
+    "nadeeshaa": {
+        "name": "Mrs. Nadeesha Adikari",
+        "designation": "Lecturer",
+        "email": "nadeeshaa@eng.pdn.ac.lk",
+        "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/nadeesha-adikari/",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/nadeesha-adikari.jpg",
+        "urls": {
+            "linkedin": "https://www.linkedin.com/in/nadeesha-adikari-48864961/",
+            "google_scholar": "",
+            "researchgate": "https://www.researchgate.net/profile/Nadeesha-Adikari",
+            "website": "",
+            "orcid": ""
+        },
+        "research_interests": [
+            "Distributed Computing",
+            "Programming Languages",
+            "Software Engineering"
+        ]
+    },
+    "namal": {
+        "name": "Dr. Suneth Namal Karunarathna",
+        "designation": "Senior Lecturer",
+        "email": "namal@eng.pdn.ac.lk",
+        "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/suneth-namal-karunarathna/",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/suneth-namal-karunarathna.png",
+        "urls": {
+            "linkedin": "https://lk.linkedin.com/in/suneth-namal-b70b8688",
+            "google_scholar": "https://scholar.google.com/citations?user=G39TP7EAAAAJ&hl=en",
+            "researchgate": "https://www.researchgate.net/profile/Suneth-Namal",
+            "website": "",
+            "orcid": "https://orcid.org/0000-0003-3912-5735"
+        },
+        "research_interests": [
+            "Network Security",
+            "Mobility Management",
+            "Fast Initial Authentication",
+            "Load Balancing",
+            "Network Virtualization",
+            "Wireless Communication",
+            "Software Defined Networks",
+            "Internet of Things (IoT)"
+        ]
+    },
+    "nuwanjaliyagoda": {
+        "name": "Nuwan Jaliyagoda",
+        "designation": "Temporary Instructor",
+        "email": "nuwanjaliyagoda@eng.pdn.ac.lk",
+        "profile_url": "https://people.ce.pdn.ac.lk/students/e15/140",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/temporary-academic-staff/nuwan.jpg",
+        "urls": {},
+        "research_interests": {}
+    },
+    "roshanr": {
+        "name": "Prof. Roshan G. Ragel",
+        "designation": "Professor",
+        "email": "roshanr@eng.pdn.ac.lk",
+        "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/roshan-ragel.jpg",
+        "urls": {
+            "linkedin": "https://www.linkedin.com/in/roshanragel/",
+            "google_scholar": "https://scholar.google.com/citations?user=UTYj8usAAAAJ&hl=en",
+            "researchgate": "https://www.researchgate.net/profile/Roshan-Ragel",
+            "website": "http://roshan.ragel.net/",
+            "orcid": "https://orcid.org/0000-0002-4511-2335"
+        },
+        "research_interests": [
+            "Embedded Systems",
+            "IoT",
+            "Accelerated Computing",
+            "Reliability and Security",
+            "Computational Biology",
+            "Micro-architectural Aspects of Embedded Systems Design & Security",
+            "Side-Channel Attacks and Countermeasures",
+            "Application-Specific Processor Design",
+            "Hardware/Software Acceleration of Bioinformatics Algorithms"
+        ]
+    },
+    "sampath": {
+        "name": "Mr. Sampath Deegalla",
+        "designation": "Senior Lecturer",
+        "email": "sampath@eng.pdn.ac.lk",
+        "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/sampath-deegalla/",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/sampath-deegalla.jpg",
+        "urls": {
+            "linkedin": "https://www.linkedin.com/in/dsdeegalla",
+            "google_scholar": "https://scholar.google.com/citations?user=QDoeGtYAAAAJ&hl=en",
+            "researchgate": "https://www.researchgate.net/profile/Sampath-Deegalla-2",
+            "website": "https://www.sites.google.com/site/dsdeegalla/",
+            "orcid": "https://orcid.org/0000-0003-1100-8334"
+        },
+        "research_interests": [
+            "Data Science",
+            "Machine Learning",
+            "Data Mining"
+        ]
+    },
+    "sithuminie": {
+        "name": "Dr. Sithumini Ekanayake",
+        "designation": "Senior Lecturer",
+        "email": "sithuminie@eng.pdn.ac.lk",
+        "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/sithumini-ekanayake/",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/sithumini-ekanayake.jpg",
+        "urls": {
+            "linkedin": "https://www.linkedin.com/in/sithumini/",
+            "google_scholar": "https://scholar.google.com/citations?hl=en&user=mRlKPGsAAAAJ",
+            "researchgate": "https://www.researchgate.net/profile/Sithumini-Ekanayake-2",
+            "website": "",
+            "orcid": ""
+        },
+        "research_interests": [
+            "Electrical Machines",
+            "Electric Drives",
+            "Power Electronics",
+            "Motion Control Systems"
+        ]
+    },
+    "swarnar": {
+        "name": "Dr. Swarnalatha Radhakrishnan",
+        "designation": "Senior Lecturer",
+        "email": "swarnar@eng.pdn.ac.lk",
+        "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/swarnalatha-radhakrishnan/",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/swarnalatha-radhakrishnan.png",
+        "urls": {
+            "linkedin": "https://lk.linkedin.com/in/swarnalatha-radhakrishnan-b4557636",
+            "google_scholar": "https://scholar.google.com/citations?user=SN6DXkUAAAAJ&hl=en",
+            "researchgate": "https://www.researchgate.net/profile/Swarnalatha-Radhakrishnan-2",
+            "website": "",
+            "orcid": ""
+        },
+        "research_interests": [
+            "Computer Architecture",
+            "Embedded Systems",
+            "Computer Interfacing",
+            "Memory Hierarchy Design"
+        ]
+    },
+    "thusharab": {
+        "name": "Thushara Bandara",
+        "designation": "Temporary Instructor",
+        "email": "thusharab@eng.pdn.ac.lk",
+        "profile_url": "#",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/temporary-academic-staff/thushara.jpeg",
+        "urls": {},
+        "research_interests": {}
+    },
+    "upuljm": {
+        "name": "Dr. Upul Jayasinghe",
+        "designation": "Senior Lecturer",
+        "email": "upuljm@eng.pdn.ac.lk",
+        "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/upul-jayasinghe/",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/upul-jayasinghe.jpg",
+        "urls": {
+            "linkedin": "https://www.linkedin.com/in/upuljm/",
+            "google_scholar": "https://scholar.google.ch/citations?user=9nBn4b0AAAAJ",
+            "researchgate": "https://www.researchgate.net/profile/Upul-Jayasinghe",
+            "website": "",
+            "orcid": "https://orcid.org/0000-0001-7671-9490"
+        },
+        "research_interests": [
+            "Machine Intelligence",
+            "Trust/Security Analysis",
+            "IoT",
+            "Networking"
+        ]
+    },
+    "ziyanm": {
+        "name": "Mr. Ziyan Maraikar",
+        "designation": "Senior Lecturer",
+        "email": "ziyanm@eng.pdn.ac.lk",
+        "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/ziyan-maraikar/",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/ziyan-maraikar.png",
+        "urls": {
+            "linkedin": "https://www.linkedin.com/in/ziyan-maraikar-15539818a",
+            "google_scholar": "https://scholar.google.com.au/citations?user=5xf_7TAAAAAJ&hl=en",
+            "researchgate": "https://www.researchgate.net/profile/Ziyan-Maraikar-2",
+            "website": "",
+            "orcid": ""
+        },
+        "research_interests": [
+            "Cloud Computing",
+            "Software Engineering",
+            "Distributed Systems",
+            "Data Science"
+        ]
+    }
+}
