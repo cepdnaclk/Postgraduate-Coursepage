@@ -29,55 +29,58 @@ layout: default
 
     <div class="container-md">
 
-        <div class="row g-3">
-            {%- for each in site.data.course_cards -%}
-            <div class="col-12 col-md-6 col-lg-4 p-3 m-0">
-                <div class="card mx-auto">
-                    <div class="row">
-                        <div class="circle col-4">
-                            <div class="content">
-                                <h3>{{ each.course_type}}</h3>
-                            </div>
-                        </div>
+        <div class="card-content">
 
-                        <div class="card-body col-8">
-                            <h3>{{ each.course_code}}</h3>
-                            <h3>{{ each.course_title}}</h3>
-                            <!-- <p>{{ each.module_type}}</p> -->
-                            <p class="crs_credits">{{ each.course_credits}}</p>
-                            <div class="crs_coordinator">
-                                <div class="crs_coordinator_img">
-                                    <img src="{{ each.course_coordinator_img}}" alt="Prof">
+            <div class="row">
+                {% for count in (1..7) %}
+
+                {%- for each in site.data.course_cards -%}
+                <div class="card-boder col-12 col-md-6 col-lg-4 m-0">
+                    <div class="card mx-auto">
+                        <div class="row">
+                            <div class="circle col-4">
+                                <div class="content">
+                                    <h3>{{ each.course_type}}</h3>
                                 </div>
-                                <p class="crs_coordinator_name">by {{ each.course_coordinator}}</p>
+                            </div>
+
+                            <div class="card-body col-8">
+                                <h3>{{ each.course_code}}</h3>
+                                <h3>{{ each.course_title}}</h3>
+                                <!-- <p>{{ each.module_type}}</p> -->
+                                <p class="crs_credits">{{ each.course_credits}}</p>
+                                <div class="crs_coordinator">
+                                    <div class="crs_coordinator_img">
+                                        <img src="{{ each.course_coordinator_img}}" alt="Prof">
+                                    </div>
+                                    <p class="crs_coordinator_name">by {{ each.course_coordinator}}</p>
+                                </div>
                             </div>
                         </div>
+
+                        <a href="{{ each.coursePage_url}}" class="btn btn-outline-primary btn-viewMore mx-auto">View
+                            More</a>
                     </div>
-
-                    <a href="{{ each.coursePage_url}}" class="btn btn-outline-primary btn-viewMore mx-auto">View
-                        More</a>
                 </div>
-            </div>
-            {%- endfor -%}
+                {%- endfor -%}
 
-            {% assign curr_pages = 1 %}
+                {%- endfor -%}
 
-            {% if site.data.course_cards.size > 6 %}
-            {% assign pages = site.data.course_cards.size | divided_by: 6.0 | ceil %}
-            <div class="pagination d-flex justify-content-center mx-auto mt-5">
-                <li class="page-item previous-page"><a class="page-link" href="#"><i class="fa fa-chevron-left"></i></a>
-                </li>
-                {% for count in (1..pages) %}
-                {% if curr_pages == count %}
-                <li class="page-item current-page"><a class="page-link current" href="#">{{ count }}</a></li>
-                {% else %}
-                <li class="page-item current-page"><a class="page-link" href="#">{{ count }}</a></li>
-                {% endif %}
-                {% endfor %}
-                <li class="page-item next-page"><a class="page-link" href="#"><i class="fa fa-chevron-right"></i></a>
-                </li>
             </div>
-            {% endif %}
+
         </div>
+
+        <!-- -------------------------------------------------- -->
+        <div class="pagination d-flex justify-content-center mx-auto mt-5">
+            <!-- <li class="page-item previous-page disable"><a class="page-link" href="#"><i class="fa fa-chevron-left"></i></a></li>
+                <li class="page-item current-page active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item dots"><a class="page-link" href="#">...</a></li>
+                <li class="page-item current-page"><a class="page-link" href="#">5</a></li>
+                <li class="page-item current-page"><a class="page-link" href="#">6</a></li>
+                <li class="page-item dots"><a class="page-link" href="#">...</a></li>
+                <li class="page-item current-page"><a class="page-link" href="#">10</a></li>
+                <li class="page-item next-page"><a class="page-link" href="#"><i class="fa fa-chevron-right"></i></a></li> -->
+        </div>
+
     </div>
 </div>

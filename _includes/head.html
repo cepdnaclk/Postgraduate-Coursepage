@@ -39,6 +39,9 @@
 {% if page.layout == "coursePage" %}
 <script src="{{ '/assets/js/owl.carousel.min.js' | relative_url }}" ></script>
 <script src="{{ '/assets/js/course.js' | relative_url }}" ></script>
+{% elsif page.layout == "mastersPage" %}
+<script src="{{ '/assets/js/home_js.js' | relative_url }}" ></script>
+<script src="{{ '/assets/js/masters.js' | relative_url }}" ></script>
 {% else %}
 <script src="{{ '/assets/js/home_js.js' | relative_url }}" ></script>
 {% endif %}
