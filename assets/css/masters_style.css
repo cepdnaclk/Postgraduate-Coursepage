@@ -1,6 +1,11 @@
 @import url(com_home_masters_style.css);    /* import commom css (home / masters) */
 
 
+[aria-current="page"] {
+    pointer-events: none;
+    cursor: default;
+}
+
 /* Module Cards ------------------------------------------------------------------- */
 .dropdown .btn {
     position: relative;
