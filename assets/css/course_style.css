@@ -278,6 +278,7 @@
     height: 100%;
     background: #fff;
     border: none;
+    border-radius: 10px;
 }
 
 .left.card {
@@ -302,36 +303,40 @@
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
-    line-height: 35px;
+    line-height: 40px;
     letter-spacing: 0.1em;
     color: #535353;
     padding: 0;
 }
 
-.left.card .card-body ul {
-    list-style: none;
-    padding-left: 2%;
+.left.card .card-body h3 {
+    margin-bottom: 20%;
 }
 
-.right.card .card-body ul {
-    list-style: none;
-    padding-left: 1%;
-}
-
-.card .card-body ul > li {
+.left.card .card-body .table tbody tr th, 
+.left.card .card-body .table tbody tr td {
+    line-height: 30px;
     font-family: 'Alatsi', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 25px;
     letter-spacing: 0.05em;
-    margin-bottom: 5px;
     color: #7C7C7C;
 }
 
-.card .card-body ul li i {
-    color: #1EB2A6;
-    padding-right: 10px;
+.right.card .card-body h3 {
+    margin-bottom: 20px;
+}
+
+.right.card .card-body .table tbody tr th, 
+.right.card .card-body .table tbody tr td {
+    line-height: 30px;
+    font-family: 'Alatsi', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    color: #7C7C7C;
 }
 
 .right.card img {
@@ -343,9 +348,14 @@
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 35px;
     letter-spacing: 0.02em;
     color: #777777;
+    text-align: justify;
+}
+
+.right.card .ref-book {
+    margin-bottom: 0;
 }
 
 .circle {
@@ -479,6 +489,27 @@
     color: #fff;
 }
 
+.counter_area {
+    position: relative;
+}
+
+.counter_area > a {
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Cuprum', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.08rem;
+}
+
+.counter_area > a:hover {
+    color: #9ab7b5;
+}
+
 /* Profile Cards ---------------------------------------------------------------*/
 
 .profileCard .container {
@@ -498,7 +529,7 @@
     top: -50px;
     height: 0;
     width: 150%;
-    background-color: #3f9b8d46;
+    background-color: #e3e3e3;
     z-index: -1;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
@@ -527,7 +558,7 @@
 }
 
 .profileCard .container .card:hover .img-container {
-    border: 10px solid #3f9b8d46;
+    border: 10px solid #e3e3e3;
 }
 
 .profileCard .container .card .img-container img {
@@ -539,7 +570,7 @@
 }
 
 .profileCard .container .card:hover .img-container img {
-    box-shadow: 0 0 0 14px #becccaab;
+    box-shadow: 0 0 0 14px #ffffff88;
     transform: scale(0.8);
 }
 
@@ -562,7 +593,7 @@
 }
 
 .profileCard .container .card ul {
-    background-color: #3f9b8d46;
+    background-color: #e3e3e3;
     transition: all 0.5s ease-in-out;
     transform: translateY(100px);
 }
@@ -580,23 +611,23 @@
     color: #FFF;
 }
 
-.profileCard .container .card ul li:hover {
+/* .profileCard .container .card ul li:hover {
     background: #fff;
-}
+} */
 
 .profileCard .container .card ul li:hover a {
-    color: #1369ce;
+    color: #a3c7c4;
 }
 
 .btn-viewProfile {
-    border-color: #3f9b8d46;
+    border-color: #e3e3e3;
     border-width: 2px;
-    color: #3f9b8d79;
+    color: #e3e3e3;
 }
 
 .btn-viewProfile:hover {
-    border-color: #3f9b8d46;
-    background-color: #3f9b8d46;
+    border-color: #e3e3e3;
+    background-color: #e3e3e3;
     border-width: 2px;
     color: #ffffff;
 }
@@ -623,6 +654,33 @@
 .slider .owl-item.active.center .slider-card .btn-viewProfile {
     border-color: #ffffff;
     color: #ffffff;
+}
+
+.slider .owl-item.active.center .slider-card .btn-viewProfile:hover {
+    border-color: #ffffff;
+    background-color: #ffffff;
+    border-width: 2px;
+    color: #1EB2A6;
+}
+
+.slider .owl-item.active.center .slider-card.card::before {
+    background-color: #1a9086c2;
+}
+
+.slider .owl-item.active.center .slider-card.card ul {
+    background-color: #1a9086c2;
+}
+
+.slider .owl-item.active.center .slider-card.card ul li:hover a {
+    color: #e3e3e3;
+}
+
+.slider .owl-item.active.center .slider-card.card:hover .img-container {
+    border: 10px solid #e3e3e3;
+}
+
+.slider .owl-item.active.center .slider-card.card:hover .img-container img {
+    box-shadow: 0 0 0 14px #ffffff88;
 }
 
 .slider-card {
