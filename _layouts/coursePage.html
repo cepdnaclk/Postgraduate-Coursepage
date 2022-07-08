@@ -18,18 +18,22 @@ layout: default
                 <div class="row">
                     <div class="circle col-4">
                         <div class="content">
-                            <h3>TE</h3>
+                            <h3>{{ page.course_type }}</h3>
                         </div>
                     </div>
 
+                    {% assign coordinator_email = page.email_coordinator | split: "@" %}
+                    {% assign coordinator_id = coordinator_email[0] | strip %}
+                    {% assign coordinator_name = site.data.staff_details[coordinator_id].name %}
+                    {% assign img_url = site.data.staff_details[coordinator_id].profile_image %}
                     <div class="card-body col-8">
-                        <h3>COXXX</h3>
-                        <p class="crs_credits">3 Credits</p>
+                        <h3>{{ page.course_code }}</h3>
+                        <p class="crs_credits">{{ page.course_credits }} Credits</p>
                         <div class="crs_coordinator">
                             <div class="crs_coordinator_img">
-                                <img src="/assets/img/staff/img2.webp" alt="Prof">
+                                <img src="{{ img_url }}" alt="Prof">
                             </div>
-                            <p class="crs_coordinator_name">by course coordintor</p>
+                            <p class="crs_coordinator_name">by {{ coordinator_name }}</p>
                         </div>
                     </div>
                 </div>
@@ -91,12 +95,15 @@ layout: default
         <div class="col-12 col-md-8 col-lg-8" style="padding-left: 0.5rem;">
             <div class="right card">
 
+                
                 <div class="row">
                     <img class="col-2" src="/assets/img/ic_description.svg" alt="Description">
                     <div class="desc-title col-10">
                         <h3>Description</h3>
                     </div>
                 </div>
+                
+
                 <div class="card-body">
 
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit nostrum quam,
@@ -160,9 +167,7 @@ layout: default
                             </tr>
                         </tbody>
                     </table>
-                    
                 </div>
-
             </div>
         </div>
     </div>
@@ -181,7 +186,7 @@ layout: default
                             <i class="flaticon-calendar"></i>
                         </div>
                         <div class="events">
-                            <h3 class="counter">120</h3>
+                            <h3 class="counter">{{ page.stat1 }}</h3>
                             <p class="text-uppercase">Finished Event</p>
                         </div>
                     </div>
@@ -192,7 +197,7 @@ layout: default
                             <i class="flaticon-calendar"></i>
                         </div>
                         <div class="events">
-                            <h3 class="counter">120</h3>
+                            <h3 class="counter">{{ page.stat2 }}</h3>
                             <p class="text-uppercase">Finished Event</p>
                         </div>
                     </div>
@@ -203,7 +208,7 @@ layout: default
                             <i class="flaticon-calendar"></i>
                         </div>
                         <div class="events">
-                            <h3 class="counter">120</h3>
+                            <h3 class="counter">{{ page.stat3 }}</h3>
                             <p class="text-uppercase">Finished Event</p>
                         </div>
                     </div>
@@ -214,7 +219,7 @@ layout: default
                             <i class="flaticon-calendar"></i>
                         </div>
                         <div class="events">
-                            <h3 class="counter">120</h3>
+                            <h3 class="counter">{{ page.stat4 }}</h3>
                             <p class="text-uppercase">Finished Event</p>
                         </div>
                     </div>
@@ -228,8 +233,6 @@ layout: default
 
 
 <!--------------- STAFF -- Academic Staff Members For This Module ------------------>
-
-
 <div class="profileCard">
     <div class="container pb-5">
         <div class="row px-2">
@@ -240,137 +243,113 @@ layout: default
 
             <div class="slider col-12 mt-5">
                 <div class="owl-carousel">
+                   
+                    {% for lecturer in page.email_lecturers %}
+                    {% assign lecturer_email = lecturer | split: "@" %}
+                    {% assign lecturer_id = lecturer_email[0] | strip %}
+                    {% assign lecturer_name = site.data.staff_details[lecturer_id].name %}
+                    {% assign img_url = site.data.staff_details[lecturer_id].profile_image %}
+                    {% assign profile_url = site.data.staff_details[lecturer_id].profile_url %}
+                    {% assign linkedin = site.data.staff_details[lecturer_id].urls.linkedin %}
+                    {% assign google_scholar = site.data.staff_details[lecturer_id].urls.google_scholar %}
+                    {% assign researchgate = site.data.staff_details[lecturer_id].urls.researchgate %}
+                    {% assign website = site.data.staff_details[lecturer_id].urls.website %}
+                    {% assign orcid = site.data.staff_details[lecturer_id].urls.orcid %}
                     <div class="slider-card card d-flex flex-column align-items-center justify-content-center">
                         <div class="inner-content d-flex flex-column align-items-center justify-content-center">
 
                             <div class="img-container rounded-circle">
-                                <img src="/assets/img/staff/img3.jpeg" alt="" class="rounded-circle">
+                                <img src="{{img_url}}" alt="" class="rounded-circle">
                             </div>
 
-                            <span class="h4 text-center text-uppercase px-2">Lisa Miller</span>
+                            <span class="h4 text-center text-uppercase px-2">{{ lecturer_name }}</span>
                             <p class="designation text-uppercase">Lecturer</p>
-                            <p><a href="#" class="btn btn-outline-primary btn-sm btn-viewProfile">View Profile</a></p>
+                            {% if profile_url != '#' %}
+                            <p><a href="{{profile_url}}" class="btn btn-outline-primary btn-sm btn-viewProfile">View Profile</a></p>
+                            {% endif %}
                         </div>
-                        <ul
-                            class="social-links d-flex align-items-center justify-content-around list-unstyled w-100 fs-5 m-0 p-0">
-                            <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                            <li><a href="#"><span class="fa fa-globe"></span></a></li>
-                            <li><a href="#"><span class="fab fa-researchgate fa-lg"></span></a></li>
-                            <!-- <li><a href="#"><span class="fab fa-orcid"></span></a></li>
-                            <li><a href="#"><span class="fab fa-google"></span></a></li> -->
+                        
+                        {% if linkedin or google_scholar or researchgate or website or orcid %}
+                        <ul class="social-links d-flex align-items-center justify-content-around list-unstyled w-100 fs-5 m-0 p-0">
+                            
+                            {% if linkedin != '' %}
+                            <li><a href="{{linkedin}}"><span class="fab fa-linkedin-in"></span></a></li>
+                            {% endif %}
+                            
+                            {% if website != '' %}
+                            <li><a href="{{website}}"><span class="fa fa-globe"></span></a></li>
+                            {% endif %}
 
+                            {% if researchgate != '' %}
+                            <li><a href="{{researchgate}}"><span class="fab fa-researchgate fa-lg"></span></a></li>
+                            {% endif %}
+
+                            {% if orcid != '' %}
+                            <li><a href="{{orcid}}"><span class="fab fa-orcid"></span></a></li>
+                            {% endif %}
+
+                            {% if google_scholar != '' %}
+                            <li><a href="{{google_scholar}}"><span class="fab fa-google"></span></a></li>
+                            {% endif %}
+                            
                         </ul>
+                        {% endif %}
                     </div>
-
+                    {% endfor %}
+                    
+                    {% for instructor in page.email_instructors %}
+                    {% assign instructor_email = instructor | split: "@" %}
+                    {% assign instructor_id = instructor_email[0] | strip %}
+                    {% assign instructor_name = site.data.staff_details[instructor_id].name %}
+                    {% assign img_url = site.data.staff_details[instructor_id].profile_image %}
+                    {% assign profile_url = site.data.staff_details[instructor_id].profile_url %}
+                    {% assign linkedin = site.data.staff_details[instructor_id].urls.linkedin %}
+                    {% assign google_scholar = site.data.staff_details[instructor_id].urls.google_scholar %}
+                    {% assign researchgate = site.data.staff_details[instructor_id].urls.researchgate %}
+                    {% assign website = site.data.staff_details[instructor_id].urls.website %}
+                    {% assign orcid = site.data.staff_details[instructor_id].urls.orcid %}
                     <div class="slider-card card d-flex flex-column align-items-center justify-content-center">
                         <div class="inner-content d-flex flex-column align-items-center justify-content-center">
 
                             <div class="img-container rounded-circle">
-                                <img src="/assets/img/staff/img3.jpeg" alt="" class="rounded-circle">
+                                <img src="{{img_url}}" alt="" class="rounded-circle">
                             </div>
 
-                            <span class="h4 text-center text-uppercase px-2">Lisa Miller</span>
+                            <span class="h4 text-center text-uppercase px-2">{{ instructor_name }}</span>
                             <p class="designation text-uppercase">Instructor</p>
-                            <p><a href="#" class="btn btn-outline-primary btn-sm btn-viewProfile">View Profile</a></p>
+                            {% if profile_url != '#' %}
+                            <p><a href="{{profile_url}}" class="btn btn-outline-primary btn-sm btn-viewProfile">View Profile</a></p>
+                            {% endif %}
                         </div>
-                        <ul
-                            class="social-links d-flex align-items-center justify-content-around list-unstyled w-100 fs-5 m-0 p-0">
-                            <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                            <li><a href="#"><span class="fa fa-globe"></span></a></li>
-                            <li><a href="#"><span class="fab fa-researchgate fa-lg"></span></a></li>
-                            <li><a href="#"><span class="fab fa-orcid"></span></a></li>
-                            <li><a href="#"><span class="fab fa-google"></span></a></li>
+                        
+                        {% if linkedin or google_scholar or researchgate or website or orcid %}
+                        <ul class="social-links d-flex align-items-center justify-content-around list-unstyled w-100 fs-5 m-0 p-0">
+                            
+                            {% if linkedin != '' %}
+                            <li><a href="{{linkedin}}"><span class="fab fa-linkedin-in"></span></a></li>
+                            {% endif %}
+                            
+                            {% if website != '' %}
+                            <li><a href="{{website}}"><span class="fa fa-globe"></span></a></li>
+                            {% endif %}
+
+                            {% if researchgate != '' %}
+                            <li><a href="{{researchgate}}"><span class="fab fa-researchgate fa-lg"></span></a></li>
+                            {% endif %}
+
+                            {% if orcid != '' %}
+                            <li><a href="{{orcid}}"><span class="fab fa-orcid"></span></a></li>
+                            {% endif %}
+
+                            {% if google_scholar != '' %}
+                            <li><a href="{{google_scholar}}"><span class="fab fa-google"></span></a></li>
+                            {% endif %}
 
                         </ul>
+                        {% endif %}
                     </div>
+                    {% endfor %}
 
-                    <div class="slider-card card d-flex flex-column align-items-center justify-content-center">
-                        <div class="inner-content d-flex flex-column align-items-center justify-content-center">
-
-                            <div class="img-container rounded-circle">
-                                <img src="/assets/img/staff/img3.jpeg" alt="" class="rounded-circle">
-                            </div>
-
-                            <span class="h4 text-center text-uppercase px-2">Lisa Miller</span>
-                            <p class="designation text-uppercase">Instructor</p>
-                            <p><a href="#" class="btn btn-outline-primary btn-sm btn-viewProfile">View Profile</a></p>
-                        </div>
-                        <ul
-                            class="social-links d-flex align-items-center justify-content-around list-unstyled w-100 fs-5 m-0 p-0">
-                            <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                            <li><a href="#"><span class="fa fa-globe"></span></a></li>
-                            <li><a href="#"><span class="fab fa-researchgate fa-lg"></span></a></li>
-                            <li><a href="#"><span class="fab fa-orcid"></span></a></li>
-                            <li><a href="#"><span class="fab fa-google"></span></a></li>
-
-                        </ul>
-                    </div>
-
-                    <div class="slider-card card d-flex flex-column align-items-center justify-content-center">
-                        <div class="inner-content d-flex flex-column align-items-center justify-content-center">
-
-                            <div class="img-container rounded-circle">
-                                <img src="/assets/img/staff/img3.jpeg" alt="" class="rounded-circle">
-                            </div>
-
-                            <span class="h4 text-center text-uppercase px-2">Lisa Miller</span>
-                            <p class="designation text-uppercase">Instructor</p>
-                            <p><a href="#" class="btn btn-outline-primary btn-sm btn-viewProfile">View Profile</a></p>
-                        </div>
-                        <ul
-                            class="social-links d-flex align-items-center justify-content-around list-unstyled w-100 fs-5 m-0 p-0">
-                            <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                            <li><a href="#"><span class="fa fa-globe"></span></a></li>
-                            <li><a href="#"><span class="fab fa-researchgate fa-lg"></span></a></li>
-                            <li><a href="#"><span class="fab fa-orcid"></span></a></li>
-                            <li><a href="#"><span class="fab fa-google"></span></a></li>
-
-                        </ul>
-                    </div>
-
-                    <div class="slider-card card d-flex flex-column align-items-center justify-content-center">
-                        <div class="inner-content d-flex flex-column align-items-center justify-content-center">
-
-                            <div class="img-container rounded-circle">
-                                <img src="/assets/img/staff/img3.jpeg" alt="" class="rounded-circle">
-                            </div>
-
-                            <span class="h4 text-center text-uppercase px-2">Lisa Miller</span>
-                            <p class="designation text-uppercase">Instructor</p>
-                            <p><a href="#" class="btn btn-outline-primary btn-sm btn-viewProfile">View Profile</a></p>
-                        </div>
-                        <ul
-                            class="social-links d-flex align-items-center justify-content-around list-unstyled w-100 fs-5 m-0 p-0">
-                            <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                            <li><a href="#"><span class="fa fa-globe"></span></a></li>
-                            <li><a href="#"><span class="fab fa-researchgate fa-lg"></span></a></li>
-                            <li><a href="#"><span class="fab fa-orcid"></span></a></li>
-                            <li><a href="#"><span class="fab fa-google"></span></a></li>
-
-                        </ul>
-                    </div>
-
-                    <div class="slider-card card d-flex flex-column align-items-center justify-content-center">
-                        <div class="inner-content d-flex flex-column align-items-center justify-content-center">
-
-                            <div class="img-container rounded-circle">
-                                <img src="/assets/img/staff/img3.jpeg" alt="" class="rounded-circle">
-                            </div>
-
-                            <span class="h4 text-center text-uppercase px-2">Lisa Miller</span>
-                            <p class="designation text-uppercase">Instructor</p>
-                            <p><a href="#" class="btn btn-outline-primary btn-sm btn-viewProfile">View Profile</a></p>
-                        </div>
-                        <ul
-                            class="social-links d-flex align-items-center justify-content-around list-unstyled w-100 fs-5 m-0 p-0">
-                            <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                            <li><a href="#"><span class="fa fa-globe"></span></a></li>
-                            <li><a href="#"><span class="fab fa-researchgate fa-lg"></span></a></li>
-                            <li><a href="#"><span class="fab fa-orcid"></span></a></li>
-                            <li><a href="#"><span class="fab fa-google"></span></a></li>
-
-                        </ul>
-                    </div>
                 </div>
             </div>
 
@@ -440,41 +419,3 @@ layout: default
         </div>
     </div>
 </div>
-
-
-<!-- <div class="site-section bg-info">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-12 text-center">
-          <span class="text-cursive h5 text-red d-block">Packages You Like</span>
-          <h2 class="text-white">Our Packages</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <div class="package text-center bg-white">
-            <span class="img-wrap"><img src="images/flaticon/svg/001-jigsaw.svg" alt="Image" class="img-fluid"></span>
-            <h3 class="text-teal">Indoor Games</h3>
-            <p>Lorem ipsum dolor sit amet. Consequatur aliquam, fuga maiores amet quo corporis distinctio soluta recusandae?</p>
-            <p><a href="#" class="btn btn-primary btn-custom-1 mt-4">Learn More</a></p>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <div class="package text-center bg-white">
-            <span class="img-wrap"><img src="images/flaticon/svg/002-target.svg" alt="Image" class="img-fluid"></span>
-            <h3 class="text-success">Outdoor Game and Event</h3>
-            <p>Lorem ipsum dolor sit amet. Consequatur aliquam, fuga maiores amet quo corporis distinctio soluta recusandae?</p>
-            <p><a href="#" class="btn btn-warning btn-custom-1 mt-4">Learn More</a></p>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <div class="package text-center bg-white">
-            <span class="img-wrap"><img src="images/flaticon/svg/003-mission.svg" alt="Image" class="img-fluid"></span>
-            <h3 class="text-danger">Camping for Kids</h3>
-            <p>Lorem ipsum dolor sit amet. Consequatur aliquam, fuga maiores amet quo corporis distinctio soluta recusandae?</p>
-            <p><a href="#" class="btn btn-success btn-custom-1 mt-4">Learn More</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->

@@ -1,4 +1,0 @@
----
-layout: coursePage
-permalink: /course
----
