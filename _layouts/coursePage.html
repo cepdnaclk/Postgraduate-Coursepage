@@ -13,7 +13,7 @@ layout: default
             <h1 class="fw-bold mb-5 pb-2 section-title">Brief Introduction To The Course</h2>
         </div>
 
-        <div class="col-12 col-md-4 col-lg-4">
+        <div class="col-12 col-md-4 col-lg-4" style="padding-right: 0.5rem;">
             <div class="left card mx-auto mb-3">
                 <div class="row">
                     <div class="circle col-4">
@@ -38,59 +38,135 @@ layout: default
                     </div>
                 </div>
 
-                <div class="row card-body">
+                <div class="card-body">
                     <h3>Lecture hours</h3>
-                    <ul>
-                        <li><i class="bi bi-arrow-right"></i>Lectures</li>
-                        <li><i class="bi bi-arrow-right"></i>Tutorial classes</li>
-                        <li><i class="bi bi-arrow-right"></i>Practical classes</li>
-                    </ul></br>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
+                                <td>Lectures</td>
+                                <td>20 hours</td>
+                            </tr>
+                            <tr>
+                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
+                                <td>Tutorial classes</td>
+                                <td>10 hours</td>
+                            </tr>
+                            <tr>
+                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
+                                <td>Practical classes</td>
+                                <td>20 hours</td>
+                            </tr>
+                        </tbody>
+                    </table></br>
 
                     <h3>Marks allocation</h3>
-                    <ul>
-                        <li><i class="bi bi-arrow-right"></i>Practical</li>
-                        <li><i class="bi bi-arrow-right"></i>Assignments</li>
-                        <li><i class="bi bi-arrow-right"></i>Mid-semester Examination</li>
-                        <li><i class="bi bi-arrow-right"></i>End-semester Examination</li>
-                    </ul></br>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
+                                <td>Practical</td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
+                                <td>Assignments</td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
+                                <td>Mid Examination</td>
+                                <td>30%</td>
+                            </tr>
+                            <tr>
+                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
+                                <td>End Examination</td>
+                                <td>50%</td>
+                            </tr>
+                        </tbody>
+                    </table></br>
+
                 </div>
 
                 <a href="#" class="btn btn-outline-primary btn-viewMore mx-auto">Download Course Plan</a>
             </div>
         </div>
 
-        <div class="col-12 col-md-8 col-lg-8">
+        <div class="col-12 col-md-8 col-lg-8" style="padding-left: 0.5rem;">
             <div class="right card">
 
-                {% if page.description %}
+                
                 <div class="row">
                     <img class="col-2" src="/assets/img/ic_description.svg" alt="Description">
-                    <div class="card-body col-10">
+                    <div class="desc-title col-10">
                         <h3>Description</h3>
-                        <p>{{ page.description }}</p>
                     </div>
                 </div>
-                {% endif %}
+                
 
                 <div class="card-body">
-                    {% if page.ILO %}
-                    <h3>Intended Learning Outcomes</h3>
-                    <ul class="ilo">
-                        {% for each in page.ILO %}
-                        <li><i class="bi bi-arrow-right"></i>{{ each }}</li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
-                </br>
 
-                    {% if page.textbooks %}
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit nostrum quam,
+                        sit, architecto nisi consequatur reiciendis ipsum doloremque repellendus deleniti
+                        nihil. Esse tempora ea vel inventore tempore sed enim doloremque.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit nostrum quam,
+                        sit, architecto nisi consequatur reiciendis ipsum doloremque repellendus deleniti
+                        nihil. Esse tempora ea vel inventore tempore sed enim doloremque.
+                    </p>
+                    <h3>Intended Learning Outcomes</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Odit nostrum Lorem ipsum dolor sit amet consectetur</td>
+                            </tr>
+                            <tr>
+                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Odit nostrum</td>
+                            </tr>
+                            <tr>
+                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Odit nostrum</td>
+                            </tr>
+                            <tr>
+                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Odit nostrum</td>
+                            </tr>
+                            <tr>
+                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Odit nostrum</td>
+                            </tr>
+                            <tr>
+                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Odit nostrum</td>
+                            </tr>
+                            <tr>
+                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Odit nostrum</td>
+                            </tr>
+                        </tbody>
+                    </table></br>
+
                     <h3>Textbooks and References</h3>
-                    <ul>
-                        {% for each in page.textbooks %}
-                        <li><i class="bi bi-arrow-right"></i>{{ each }}</li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
+                    <table class="table ref-book">
+                        <tbody>
+                            <tr>
+                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
+                                <td>J.D. Ulman, Foundations of Computer Science C edition</td>
+                            </tr>
+                            <tr>
+                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
+                                <td>J.D. Ulman, Foundations of Computer Science C edition</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -151,6 +227,7 @@ layout: default
             </div>
         </div>
     </div>
+    <a href="#">View All</a>
 </div>
 <!-- counter_area_end  -->
 
