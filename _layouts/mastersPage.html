@@ -29,7 +29,6 @@ layout: default
 
     {% assign courses = site.pages | where: "layout", "coursePage" %}
     <div class="container-md">
-
         <div class="row g-3">
             
             {%- for each in courses -%}
@@ -40,7 +39,7 @@ layout: default
                             <div class="content">
                                 <h3>{{ each.course_type}}</h3>
                             </div>
-
+                        </div>
 
                         <div class="card-body col-8">
                             <h3>{{ each.course_code}}</h3>
@@ -57,18 +56,15 @@ layout: default
                                     <img src="{{ img_url }}" alt="Prof">
                                 </div>
                                 <p class="crs_coordinator_name">by {{ coordinator_name }}</p>
-
                             </div>
                         </div>
+                    </div>
 
-
-                    <a href="{{ each.permalink }}" class="btn btn-outline-primary btn-viewMore mx-auto">View
+                    <a href="{{ each.permalink}}" class="btn btn-outline-primary btn-viewMore mx-auto">View
                         More</a>
                 </div>
-                {%- endfor -%}
-
             </div>
-
+            {%- endfor -%}
 
             {% assign courses_count = courses | size %}
             {% if courses_count > 6 %}
@@ -84,21 +80,6 @@ layout: default
                 </li>
             </div>
             {% endif %}
-
         </div>
-
-        <!-- -------------------------------------------------- -->
-        <div class="pagination d-flex justify-content-center mx-auto mt-5">
-            <!-- <li class="page-item previous-page disable"><a class="page-link" href="#"><i class="fa fa-chevron-left"></i></a></li>
-                <li class="page-item current-page active"><a class="page-link" href="#">1</a></li>
-                <li class="page-item dots"><a class="page-link" href="#">...</a></li>
-                <li class="page-item current-page"><a class="page-link" href="#">5</a></li>
-                <li class="page-item current-page"><a class="page-link" href="#">6</a></li>
-                <li class="page-item dots"><a class="page-link" href="#">...</a></li>
-                <li class="page-item current-page"><a class="page-link" href="#">10</a></li>
-                <li class="page-item next-page"><a class="page-link" href="#"><i class="fa fa-chevron-right"></i></a></li> -->
-
-        </div>
-
     </div>
 </div>
