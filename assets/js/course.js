@@ -1,6 +1,12 @@
 $(document).ready(()=>{
+    let noOfLectures = document.querySelectorAll(".slider-card").length;
+    let bool = true;
+    if (noOfLectures < 3) {
+        bool = false;
+    }
+
     $('.owl-carousel').owlCarousel({
-        loop:true,
+        loop:bool,
         margin:10,
         autoplay:true,
         autoplaySpeed: 500,

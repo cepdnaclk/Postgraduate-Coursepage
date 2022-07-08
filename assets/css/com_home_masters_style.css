@@ -118,7 +118,7 @@
     top: 55px;
     padding: 0;
     width: 200px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     z-index: 200;
     transform: translateY(-10px);
     transition: transform 0.4s ease, opacity 0.4s ease-in;
@@ -142,11 +142,12 @@
 }
 
 .sub-menu li:hover {
-    background-color: rgba(255, 255, 255, 0.6);
+    /* background-color: rgba(255, 255, 255, 0.6); */
+    padding-left: 30px;
 }
 
 .sub-menu a:hover {
-    color: #697978;
+    color: #b2c3c1;
 }
 
 .all_course:hover .space {
