@@ -248,3 +248,7 @@
     color: rgba(0, 0, 0, 0.232);
     cursor: none;
 }
+
+.page-item.disable:hover {
+    transform: translateX(0px);
+}
