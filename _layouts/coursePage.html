@@ -45,17 +45,17 @@ layout: default
                             <tr>
                                 <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
                                 <td>Lectures</td>
-                                <td>20 hours</td>
+                                <td>{{ page.lecture_hours }} hours</td>
                             </tr>
                             <tr>
                                 <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
                                 <td>Tutorial classes</td>
-                                <td>10 hours</td>
+                                <td>{{ page.tutorial_hours }} hours</td>
                             </tr>
                             <tr>
                                 <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
                                 <td>Practical classes</td>
-                                <td>20 hours</td>
+                                <td>{{ page.practical_hours }} hours</td>
                             </tr>
                         </tbody>
                     </table></br>
@@ -66,22 +66,22 @@ layout: default
                             <tr>
                                 <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
                                 <td>Practical</td>
-                                <td>10%</td>
+                                <td>{{ page.practical_marks }}</td>
                             </tr>
                             <tr>
                                 <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
                                 <td>Assignments</td>
-                                <td>10%</td>
+                                <td>{{ page.assignment_marks }}</td>
                             </tr>
                             <tr>
                                 <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
                                 <td>Mid Examination</td>
-                                <td>30%</td>
+                                <td>{{ page.midExam_marks }}</td>
                             </tr>
                             <tr>
                                 <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
                                 <td>End Examination</td>
-                                <td>50%</td>
+                                <td>{{ page.endExam_marks }}</td>
                             </tr>
                         </tbody>
                     </table></br>
@@ -105,66 +105,29 @@ layout: default
                 
 
                 <div class="card-body">
+                    <p>{{page.description}}</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit nostrum quam,
-                        sit, architecto nisi consequatur reiciendis ipsum doloremque repellendus deleniti
-                        nihil. Esse tempora ea vel inventore tempore sed enim doloremque.
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit nostrum quam,
-                        sit, architecto nisi consequatur reiciendis ipsum doloremque repellendus deleniti
-                        nihil. Esse tempora ea vel inventore tempore sed enim doloremque.
-                    </p>
                     <h3>Intended Learning Outcomes</h3>
                     <table class="table">
                         <tbody>
+                            {% for each in page.ILO %}
                             <tr>
                                 <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
-                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                    Odit nostrum Lorem ipsum dolor sit amet consectetur</td>
+                                <td>{{ each }}</td>
                             </tr>
-                            <tr>
-                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
-                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                    Odit nostrum</td>
-                            </tr>
-                            <tr>
-                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
-                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                    Odit nostrum</td>
-                            </tr>
-                            <tr>
-                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
-                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                    Odit nostrum</td>
-                            </tr>
-                            <tr>
-                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
-                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                    Odit nostrum</td>
-                            </tr>
-                            <tr>
-                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
-                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                    Odit nostrum</td>
-                            </tr>
-                            <tr>
-                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
-                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                    Odit nostrum</td>
-                            </tr>
+                            {% endfor %}
                         </tbody>
                     </table></br>
 
                     <h3>Textbooks and References</h3>
                     <table class="table ref-book">
                         <tbody>
+                            {% for each in page.textbooks %}
                             <tr>
                                 <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
-                                <td>J.D. Ulman, Foundations of Computer Science C edition</td>
+                                <td>{{ each }}</td>
                             </tr>
-                            <tr>
-                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
-                                <td>J.D. Ulman, Foundations of Computer Science C edition</td>
-                            </tr>
+                            {% endfor %}
                         </tbody>
                     </table>
                 </div>
