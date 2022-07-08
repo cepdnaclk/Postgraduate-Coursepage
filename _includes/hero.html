@@ -15,9 +15,9 @@
     </div>
     <div class="menu-bar">
         {% if page.layout == "coursePage" %}
-        <label id="course-name">Complex Reactive Systems and Process Automation</label>
+        <label id="course-name">{{ page.course_name }}</label>
         <div id="search-box">
-            <label>COXXX</label>
+            <label>{{ page.course_code }}</label>
             <img src="/assets/img/home_img/Course_code.svg" alt="">
         </div>
         {% else %}
