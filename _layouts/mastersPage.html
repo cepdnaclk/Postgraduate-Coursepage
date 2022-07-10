@@ -29,57 +29,61 @@ layout: default
 
     {% assign courses = site.pages | where: "layout", "coursePage" %}
     <div class="container-md">
-        <div class="row g-3">
-            
-            {%- for each in courses -%}
-            <div class="col-12 col-md-6 col-lg-4 p-3 m-0">
-                <div class="card mx-auto">
-                    <div class="row">
-                        <div class="circle col-4">
-                            <div class="content">
-                                <h3>{{ each.course_type}}</h3>
-                            </div>
-                        </div>
 
-                        <div class="card-body col-8">
-                            <h3>{{ each.course_code}}</h3>
-                            <h3>{{ each.course_name}}</h3>
-                            <!-- <p>{{ each.module_type}}</p> -->
-                            <p class="crs_credits">{{ each.course_credits}} Credits</p>
-                            <div class="crs_coordinator">
+        <div class="card-content">
 
-                                {% assign coordinator_email = each.email_coordinator | split: "@" %}
-                                {% assign coordinator_id = coordinator_email[0] | strip %}
-                                {% assign coordinator_name = site.data.staff_details[coordinator_id].name %}
-                                {% assign img_url = site.data.staff_details[coordinator_id].profile_image %}
-                                <div class="crs_coordinator_img">
-                                    <img src="{{ img_url }}" alt="Prof">
+            <div class="row">
+
+                {%- for each in courses -%}
+                <div class="card-boder col-12 col-md-6 col-lg-4 m-0">
+                    <div class="card mx-auto">
+                        <div class="row">
+                            <div class="circle col-4">
+                                <div class="content">
+                                    <h3>{{ each.course_type}}</h3>
                                 </div>
-                                <p class="crs_coordinator_name">by {{ coordinator_name }}</p>
+                            </div>
+
+                            <div class="card-body col-8">
+                                <h3>{{ each.course_code}}</h3>
+                                <h3>{{ each.course_name}}</h3>
+                                <!-- <p>{{ each.module_type}}</p> -->
+                                <p class="crs_credits">{{ each.course_credits}} Credits</p>
+                                <div class="crs_coordinator">
+
+                                    {% assign coordinator_email = each.email_coordinator | split: "@" %}
+                                    {% assign coordinator_id = coordinator_email[0] | strip %}
+                                    {% assign coordinator_name = site.data.staff_details[coordinator_id].name %}
+                                    {% assign img_url = site.data.staff_details[coordinator_id].profile_image %}
+                                    <div class="crs_coordinator_img">
+                                        <img src="{{ img_url }}" alt="Prof">
+                                    </div>
+                                    <p class="crs_coordinator_name">by {{ coordinator_name }}</p>
+                                </div>
                             </div>
                         </div>
+
+                        <a href="{{ each.permalink}}" class="btn btn-outline-primary btn-viewMore mx-auto">View
+                            More</a>
                     </div>
-
-                    <a href="{{ each.permalink}}" class="btn btn-outline-primary btn-viewMore mx-auto">View
-                        More</a>
                 </div>
-            </div>
-            {%- endfor -%}
+                {%- endfor -%}
 
-            {% assign courses_count = courses | size %}
-            {% if courses_count > 6 %}
-            {% assign pages = courses_count | divided_by: 6.0 | ceil %}
-            <div class="pagination d-flex justify-content-center mx-auto mt-5">
-                <li class="page-item previous-page"><a class="page-link" href="#"><i class="fa fa-chevron-left"></i></a>
-                </li>
-                {% for count in (1..pages) %}
-                <!-- <li class="page-item current-page"><a class="page-link current" href="#">{{ count }}</a></li> -->
-                <li class="page-item current-page"><a class="page-link" href="#">{{ count }}</a></li>
-                {% endfor %}
-                <li class="page-item next-page"><a class="page-link" href="#"><i class="fa fa-chevron-right"></i></a>
-                </li>
             </div>
-            {% endif %}
+
         </div>
+
+        <!-- -------------------------------------------------- -->
+        <div class="pagination d-flex justify-content-center mx-auto mt-5">
+            <!-- <li class="page-item previous-page disable"><a class="page-link" href="#"><i class="fa fa-chevron-left"></i></a></li>
+                <li class="page-item current-page active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item dots"><a class="page-link" href="#">...</a></li>
+                <li class="page-item current-page"><a class="page-link" href="#">5</a></li>
+                <li class="page-item current-page"><a class="page-link" href="#">6</a></li>
+                <li class="page-item dots"><a class="page-link" href="#">...</a></li>
+                <li class="page-item current-page"><a class="page-link" href="#">10</a></li>
+                <li class="page-item next-page"><a class="page-link" href="#"><i class="fa fa-chevron-right"></i></a></li> -->
+        </div>
+
     </div>
 </div>
