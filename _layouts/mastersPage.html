@@ -14,14 +14,15 @@ layout: default
             <div class="col-12 col-md-6 col-lg-4 px-3">
                 <button class="btn btn-secondary dropdown-toggle mx-auto" type="button" id="book-dropdown"
                     data-bs-toggle="dropdown">
-                    <label>Courses</label>
+                    <label class="selection">All</label>
                     <i class="fa fa-chevron-down"></i>
                     <label class="lbl-course-category">Course Category</label>
                 </button>
                 <ul class="dropdown-menu">
-                    <li class="dropdown-item">Core Courses</li>
-                    <li class="dropdown-item">Technical Electives</li>
-                    <li class="dropdown-item">Research Topics</li>
+                    <li class="dropdown-item"><label id="all">All</label></li>
+                    <li class="dropdown-item"><label id="cc">Core Courses</label></li>
+                    <li class="dropdown-item"><label id="te">Technical Electives</label></li>
+                    <li class="dropdown-item"><label id="rt">Research Topics</label></li>
                 </ul>
             </div>
         </div>
@@ -29,8 +30,8 @@ layout: default
 
     {% assign courses = site.pages | where: "layout", "coursePage" %}
     <div class="container-md">
-
-        <div class="card-content">
+        
+        <div class="card-content all">
 
             <div class="row">
 
@@ -67,6 +68,141 @@ layout: default
                             More</a>
                     </div>
                 </div>
+                {%- endfor -%}
+
+            </div>
+
+        </div>
+
+        <div class="card-content cc">
+
+            <div class="row">
+
+                {%- for each in courses -%}
+                {% if each.course_type == "Core" %}
+                <div class="card-boder col-12 col-md-6 col-lg-4 m-0">
+                    <div class="card mx-auto">
+                        <div class="row">
+                            <div class="circle col-4">
+                                <div class="content">
+                                    <h3>{{ each.course_type}}</h3>
+                                </div>
+                            </div>
+
+                            <div class="card-body col-8">
+                                <h3>{{ each.course_code}}</h3>
+                                <h3>{{ each.course_name}}</h3>
+                                <!-- <p>{{ each.module_type}}</p> -->
+                                <p class="crs_credits">{{ each.course_credits}} Credits</p>
+                                <div class="crs_coordinator">
+
+                                    {% assign coordinator_email = each.email_coordinator | split: "@" %}
+                                    {% assign coordinator_id = coordinator_email[0] | strip %}
+                                    {% assign coordinator_name = site.data.staff_details[coordinator_id].name %}
+                                    {% assign img_url = site.data.staff_details[coordinator_id].profile_image %}
+                                    <div class="crs_coordinator_img">
+                                        <img src="{{ img_url }}" alt="Prof">
+                                    </div>
+                                    <p class="crs_coordinator_name">by {{ coordinator_name }}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="{{ each.permalink}}" class="btn btn-outline-primary btn-viewMore mx-auto">View
+                            More</a>
+                    </div>
+                </div>
+                {% endif %}
+                {%- endfor -%}
+
+            </div>
+
+        </div>
+
+        <div class="card-content te">
+
+            <div class="row">
+
+                {%- for each in courses -%}
+                {% if each.course_type == "Tech" %}
+                <div class="card-boder col-12 col-md-6 col-lg-4 m-0">
+                    <div class="card mx-auto">
+                        <div class="row">
+                            <div class="circle col-4">
+                                <div class="content">
+                                    <h3>{{ each.course_type}}</h3>
+                                </div>
+                            </div>
+
+                            <div class="card-body col-8">
+                                <h3>{{ each.course_code}}</h3>
+                                <h3>{{ each.course_name}}</h3>
+                                <!-- <p>{{ each.module_type}}</p> -->
+                                <p class="crs_credits">{{ each.course_credits}} Credits</p>
+                                <div class="crs_coordinator">
+
+                                    {% assign coordinator_email = each.email_coordinator | split: "@" %}
+                                    {% assign coordinator_id = coordinator_email[0] | strip %}
+                                    {% assign coordinator_name = site.data.staff_details[coordinator_id].name %}
+                                    {% assign img_url = site.data.staff_details[coordinator_id].profile_image %}
+                                    <div class="crs_coordinator_img">
+                                        <img src="{{ img_url }}" alt="Prof">
+                                    </div>
+                                    <p class="crs_coordinator_name">by {{ coordinator_name }}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="{{ each.permalink}}" class="btn btn-outline-primary btn-viewMore mx-auto">View
+                            More</a>
+                    </div>
+                </div>
+                {% endif %}
+                {%- endfor -%}
+
+            </div>
+
+        </div>
+
+        <div class="card-content rt">
+
+            <div class="row">
+
+                {%- for each in courses -%}
+                {% if each.course_type == "Res" %}
+                <div class="card-boder col-12 col-md-6 col-lg-4 m-0">
+                    <div class="card mx-auto">
+                        <div class="row">
+                            <div class="circle col-4">
+                                <div class="content">
+                                    <h3>{{ each.course_type}}</h3>
+                                </div>
+                            </div>
+
+                            <div class="card-body col-8">
+                                <h3>{{ each.course_code}}</h3>
+                                <h3>{{ each.course_name}}</h3>
+                                <!-- <p>{{ each.module_type}}</p> -->
+                                <p class="crs_credits">{{ each.course_credits}} Credits</p>
+                                <div class="crs_coordinator">
+
+                                    {% assign coordinator_email = each.email_coordinator | split: "@" %}
+                                    {% assign coordinator_id = coordinator_email[0] | strip %}
+                                    {% assign coordinator_name = site.data.staff_details[coordinator_id].name %}
+                                    {% assign img_url = site.data.staff_details[coordinator_id].profile_image %}
+                                    <div class="crs_coordinator_img">
+                                        <img src="{{ img_url }}" alt="Prof">
+                                    </div>
+                                    <p class="crs_coordinator_name">by {{ coordinator_name }}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="{{ each.permalink}}" class="btn btn-outline-primary btn-viewMore mx-auto">View
+                            More</a>
+                    </div>
+                </div>
+                {% endif %}
                 {%- endfor -%}
 
             </div>

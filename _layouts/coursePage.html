@@ -108,11 +108,11 @@ layout: default
                     <p>{{page.description}}</p>
 
                     <h3>Intended Learning Outcomes</h3>
-                    <table class="table">
+                    <table class="table ilo">
                         <tbody>
                             {% for each in page.ILO %}
                             <tr>
-                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
+                                <th scope="row"><label>#</label></th>
                                 <td>{{ each }}</td>
                             </tr>
                             {% endfor %}
