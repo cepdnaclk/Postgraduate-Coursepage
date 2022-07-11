@@ -347,10 +347,9 @@
     color: #7C7C7C;
 }
 
-/* .card .card-body .table tbody tr th i {
+.card .card-body .table tbody tr th label{
     color: #1EB2A6;
-    display: none;
-} */
+}
 
 .right.card img {
     margin-bottom: auto;
@@ -366,6 +365,10 @@
     color: #777777;
     text-align: justify;
     margin-bottom: 8%;
+}
+
+.right.card .ilo tbody tr td {
+    padding-bottom: 2%;
 }
 
 .right.card .ref-book {
@@ -429,7 +432,7 @@
     position: absolute;
     width: 200px;
     height: 200px;
-    border-radius: 0;
+    border-radius: 10px;
     top: -100px;
     box-shadow: 5px 5px #53535390;
 }
