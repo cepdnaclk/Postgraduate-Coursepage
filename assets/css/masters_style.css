@@ -155,9 +155,9 @@
     position: absolute;
     width: 200px;
     height: 200px;
-    border-radius: 10px;
+    border-radius: 0;
     top: -100px;
-    box-shadow: 5px 5px #53535390;
+    box-shadow: 5px 5px 5px #5353535e;
 }
 
 .crs_coordinator_name {
