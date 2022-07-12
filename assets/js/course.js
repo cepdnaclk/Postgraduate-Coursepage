@@ -8,8 +8,8 @@ $(document).ready(()=>{
     $('.owl-carousel').owlCarousel({
         loop:bool,
         margin:10,
-        autoplay:true,
-        autoplaySpeed: 500,
+        autoplay:false,
+       // autoplaySpeed: 500,
         responsiveClass:true,
         center:true,
         // dots:true,
