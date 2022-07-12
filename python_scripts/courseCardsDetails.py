@@ -10,7 +10,7 @@ import requests
 import sys
 
 jsonDetails = []
-jsonFilePath = "../_data/course_cards_new.json"
+jsonFilePath = "../_data/course_cards.json"
 
 
 def get_course_details():
@@ -27,23 +27,23 @@ def get_course_details():
 
             eachCourseDetails = {}
             for eachLine in courseContent:
-                if "name" in eachLine:
-                    eachCourseDetails["course_title"] = eachLine.split(":")[
+                if "course_name" in eachLine:
+                    eachCourseDetails["course_name"] = eachLine.split(":")[
                         1].strip()
-                if "code" in eachLine:
+                if "course_code" in eachLine:
                     eachCourseDetails["course_code"] = eachLine.split(":")[
                         1].strip()
-                if "courseType" in eachLine:
+                if "course_type" in eachLine:
                     eachCourseDetails["course_type"] = eachLine.split(":")[
                         1].strip()
-                if "credits" in eachLine:
+                if "course_credits" in eachLine:
                     eachCourseDetails["course_credits"] = eachLine.split(":")[
                         1].strip()
                 if "permalink" in eachLine:
                     eachCourseDetails["coursePage_url"] = eachLine.split(":")[
                         1].strip()
-                if "email_lecturer" in eachLine:
-                    eachCourseDetails["email_lecturer"] = eachLine.split(":")[
+                if "email_coordinator" in eachLine:
+                    eachCourseDetails["email_coordinator"] = eachLine.split(":")[
                         1].strip()
 
         except:
@@ -56,7 +56,7 @@ def get_lecturer_details():
     apiIndex = "https://api.ce.pdn.ac.lk/people/v1/staff/"
 
     for each in jsonDetails:
-        staffMemberID = each["email_lecturer"].split("@")[0].strip()
+        staffMemberID = each["email_coordinator"].split("@")[0].strip()
         url = apiIndex + staffMemberID
 
         r = requests.get(url)
@@ -84,7 +84,7 @@ def add_content():
     {
         "course_type" : "''' + jsonDetails[i]["course_type"]+'''",
         "course_code" : "''' + jsonDetails[i]["course_code"]+'''",
-        "course_title" : "''' + jsonDetails[i]["course_title"]+'''",
+        "course_name" : "''' + jsonDetails[i]["course_name"]+'''",
         "course_credits" : "''' + jsonDetails[i]["course_credits"]+'''",
         "course_coordinator_img" : "''' + jsonDetails[i]["course_coordinator_img"]+'''",
         "course_coordinator" : "''' + jsonDetails[i]["course_coordinator"]+'''",
