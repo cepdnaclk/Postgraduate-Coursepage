@@ -1,0 +1,16 @@
+---
+layout: null
+permalink: "/api/courses/"
+sitemap: false
+---
+
+{%- comment -%}
+This works only with the layout, 'coursePage'
+{%- endcomment -%}
+
+{%- assign courses_list = site.html_pages | where: "layout", "coursePage" -%}
+{
+    {% for course in courses_list -%}
+    {%- include api_courses.html course=course -%}{% if forloop.last %}{% else %},{% endif %}
+    {% endfor -%}
+}
