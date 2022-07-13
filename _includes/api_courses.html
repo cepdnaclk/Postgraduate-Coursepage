@@ -1,0 +1,41 @@
+"{{ course.course_code }}" : {
+"course_name": "{{ course.course_name }}",
+"course_code": "{{ course.course_code }}",
+"course_type": "{{course.course_type}}",
+"course_credits": "{{course.course_credits}}",
+"allocation" : {
+    "lectures" : "{{ course.lecture_hours }}",
+    "tutorials" : "{{ course.tutorial_hours }}",
+    "practicals" : "{{ course.practical_hours }}"
+},
+"marks": {
+    "practicals" : {% if course.practical_marks%}{{ course.practical_marks }}{% else %}""{% endif %},
+    "assignments" : {% if course.assignment_marks%}{{ course.assignment_marks }}{% else %}""{% endif %},
+    "mid_exam" : {% if course.midExam_marks%}{{ course.midExam_marks }}{% else %}""{% endif %},
+    "end_exam" : {% if course.endExam_marks%}{{ course.endExam_marks }}{% else %}""{% endif %}
+},
+"emails":{
+    "coordinator": "{{ course.email_coordinator }}",
+    "lecturers": [
+    {% for each in course.email_lecturers %}
+    "{{ each }}" {% if forloop.last %}{% else %},{% endif %}
+    {% endfor %}
+    ],
+    "instructors": [
+    {% for each in course.email_instructors %}
+    "{{ each }}" {% if forloop.last %}{% else %},{% endif %}
+    {% endfor %}
+    ]
+},
+"ILO": [
+{% for each in course.ILO %}
+"{{ each }}" {% if forloop.last %}{% else %},{% endif %}
+{% endfor %}
+],
+"textbooks": [
+{% for each in course.textbooks %}
+"{{ each }}" {% if forloop.last %}{% else %},{% endif %}
+{% endfor %}
+],
+"description": "{{course.description}}"
+}
