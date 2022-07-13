@@ -129,16 +129,17 @@
     border-radius: 5px;
     padding: 10px 20px;
     margin: 5px 0px;
+
+    color: #ffffff;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: large;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
 }
 
 .sub-menu a {
     text-decoration: none;
-    color: #ffffff;
-    font-family: Inria Sans;
-    font-size: medium;
-    font-style: normal;
-    font-weight: 600;
-    letter-spacing: 0.1rem;
 }
 
 .sub-menu li:hover {
@@ -222,6 +223,10 @@
     .sub-menu {
         width: 150px;
         top: 40px;
+    }
+
+    .sub-menu a li {
+        font-size: medium;
     }
 
     .space {
@@ -322,13 +327,23 @@
         align-items: center;
     }
 
-    .all_course.clicked .sub-menu a:hover {
+    .all_course.clicked .sub-menu a {
         text-align: center;
         width: 100%;
     }
 
     .all_course i {
         margin: 0px 0px 0px 10px;
+    }
+
+    .sub-menu a li {
+        font-size: small;
+    }
+
+    .sub-menu li:hover {
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: medium;
     }
 
     #hero img {
