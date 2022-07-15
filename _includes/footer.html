@@ -17,36 +17,36 @@
                         <span class="ms-4">Peradeniya, 20400</span><br>
                         <span class="ms-4">Sri Lanka</span>
                     </p>
-                    <!-- <p><i class="fas fa-envelope me-2"></i>headce@eng.pdn.ac.lk</p>
-                    <p><i class="fas fa-phone me-2"></i>+94 81 2393470</p>
-                    <p><i class="fas fa-print me-2"></i>+94 81 2393914</p> -->
                 </div>
 
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 mb-md-1">
-                    <h6 class="text-uppercase fw-bold">Quick Links</h6>
+                    <h6 class="text-uppercase fw-bold">Courses</h6>
                     <hr class="mb-4 mt-0 d-inline-block mx-auto footer-hr"/>
 
                     <ul class="list-unstyled">
-                        <li><i class="fas fa-arrow-right me-2"></i><a href="/" class="text-white">Home</a></li>
-                        <li><i class="fas fa-arrow-right me-2"></i><a href="/masters" class="text-white">All Courses</a></li>
-                        <li><i class="fas fa-arrow-right me-2"></i><a href="https://people.ce.pdn.ac.lk/staff/academic/" class="text-white">Staff</a></li>
+                        <li><i class="fas fa-arrow-right me-2"></i><a href="http://www.ce.pdn.ac.lk/postgraduate-courses" class="text-white">Ph.D.</a></li>
+                        <li><i class="fas fa-arrow-right me-2"></i><a href="http://www.ce.pdn.ac.lk/postgraduate-courses" class="text-white">M.Phill.</a></li>
+                        <li><i class="fas fa-arrow-right me-2"></i><a href="/msc" class="text-white">M.Sc.Eng/M.Sc.</a></li>
                         
                     </ul>
                 </div>
 
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4 mb-md-1">
-                    <h6 class="text-uppercase fw-bold">Edit Page</h6>
+                    <h6 class="text-uppercase fw-bold">Quick Links</h6>
                     <hr class="mb-4 mt-0 d-inline-block mx-auto footer-hr"/>
 
                     <ul class="list-unstyled">
-                        <li><i class="fas fa-arrow-right me-2"></i><a href="" class="text-white" target="_blank">Edit PG Course Page</a></li>
+                        <li><i class="fas fa-arrow-right me-2"></i><a href="/" class="text-white">Home</a></li>
+                        <li><i class="fas fa-arrow-right me-2"></i><a href="https://people.ce.pdn.ac.lk/staff/academic/" class="text-white" target="_blank">Staff</a></li>
+                        {% if page.layout == "coursePage" %}
+                        <li><i class="fas fa-arrow-right me-2"></i><a href="https://github.com/cepdnaclk/Postgraduate-Coursepage/tree/main/pages/courses/{{ page.course_code | downcase }}.html" class="text-white" target="_blank">Edit this page</a></li>
+                        {% else %}
+                        <li><i class="fas fa-arrow-right me-2"></i><a href="https://github.com/cepdnaclk/Postgraduate-Coursepage" class="text-white" target="_blank">Edit this page</a></li>
+                        {% endif %}
+                        <li><i class="fas fa-arrow-right me-2"></i><a href="#" class="text-white">Documentation</a></li>
                     </ul>
                 </div>
 
-                <!-- <div class="col-md-3 col-lg-5 col-xl-3 mx-auto mb-4 mb-md-1" style="margin:30px ;">
-                    <img src="../assets/img/home_img/Logo_footer.svg" class="rounded" width="250">
-                </div>  -->
-                
             </div>
         </div>
     </section>
