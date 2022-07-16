@@ -233,9 +233,10 @@ layout: default
                             {% endif %}
                         </div>
                         
-                        {% if linkedin or google_scholar or researchgate or website or orcid %}
+                        
                         <ul class="social-links d-flex align-items-center justify-content-around list-unstyled w-100 fs-5 m-0 p-0">
-                            
+                            {% if linkedin or google_scholar or researchgate or website or orcid %}
+
                             {% if linkedin != '' %}
                             <li><a href="{{linkedin}}"><span class="fab fa-linkedin-in"></span></a></li>
                             {% endif %}
@@ -255,9 +256,12 @@ layout: default
                             {% if google_scholar != '' %}
                             <li><a href="{{google_scholar}}"><span class="fab fa-google"></span></a></li>
                             {% endif %}
-                            
+
+                            {% else %}
+                            <li><label></label></li>
+                            {% endif %}
                         </ul>
-                        {% endif %}
+                        
                     </div>
                     {% endfor %}
                     
@@ -286,9 +290,10 @@ layout: default
                             {% endif %}
                         </div>
                         
-                        {% if linkedin or google_scholar or researchgate or website or orcid %}
+                        
                         <ul class="social-links d-flex align-items-center justify-content-around list-unstyled w-100 fs-5 m-0 p-0">
-                            
+                            {% if linkedin or google_scholar or researchgate or website or orcid %}
+
                             {% if linkedin != '' %}
                             <li><a href="{{linkedin}}"><span class="fab fa-linkedin-in"></span></a></li>
                             {% endif %}
@@ -309,8 +314,11 @@ layout: default
                             <li><a href="{{google_scholar}}"><span class="fab fa-google"></span></a></li>
                             {% endif %}
 
+                            {% else %}
+                            <li><label></label></li>
+                            {% endif %}
                         </ul>
-                        {% endif %}
+                        
                     </div>
                     {% endfor %}
 

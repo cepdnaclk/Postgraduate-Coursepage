@@ -432,7 +432,7 @@
     position: absolute;
     width: 200px;
     height: 200px;
-    border-radius: 0;
+    border-radius: 8px;
     top: -100px;
     box-shadow: 5px 5px 5px #5353535e;
 }
@@ -540,10 +540,15 @@
     justify-content: center;
 }
 
-.profileCard .container .card::before {
+.inner-content {
+    width: 100%;
+    position: relative;
+}
+
+.profileCard .container .inner-content::before {
     content: "";
     position: absolute;
-    top: -50px;
+    top: -90px;
     height: 0;
     width: 150%;
     background-color: #e3e3e3;
@@ -554,7 +559,6 @@
 }
 
 .profileCard .container .card {
-    /* width: 280px; */
     height: 365px;
     overflow: hidden;
     z-index: 3;
@@ -563,7 +567,7 @@
     margin: 50px 15px 90px 15px;
 }
 
-.profileCard .container .card:hover::before {
+.profileCard .container .card:hover .inner-content::before {
     height: 150px;
 }
 
@@ -610,13 +614,14 @@
 }
 
 .profileCard .container .card ul {
+    position: absolute;
     background-color: #e3e3e3;
     transition: all 0.5s ease-in-out;
-    transform: translateY(100px);
+    bottom: -40px;
 }
 
 .profileCard .container .card:hover ul {
-    transform: translateY(40px);
+    bottom: 0;
 }
 
 .profileCard .container .card ul li {
@@ -627,10 +632,6 @@
 .profileCard .container .card ul li a {
     color: #FFF;
 }
-
-/* .profileCard .container .card ul li:hover {
-    background: #fff;
-} */
 
 .profileCard .container .card ul li:hover a {
     color: #a3c7c4;
@@ -651,7 +652,7 @@
 
 .slider {
     margin-bottom: 20px;
-    position: relative;
+    /* position: relative; */
 }
 
 .slider .owl-item.active.center .slider-card {
@@ -680,7 +681,7 @@
     color: #1EB2A6;
 }
 
-.slider .owl-item.active.center .slider-card.card::before {
+.slider .owl-item.active.center .slider-card .inner-content::before {
     background-color: #1a9086c2;
 }
 
