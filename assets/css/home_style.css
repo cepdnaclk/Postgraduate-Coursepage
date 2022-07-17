@@ -25,16 +25,17 @@
     font-size: 20px;
     line-height: 35px;
     text-align: justify;
-    color: #6f6f6f;
+    /* color: #6f6f6f; */
+    color: #7C7C7C;
     letter-spacing: 0.05rem;
 }
 
 .table {
     position: centre;
     text-align: center;
-    border: 1px solid;
     padding: 20px;
     column-width: 10px;
+    background-color: #ffffff;
 }
 
 .table thead {
@@ -43,20 +44,25 @@
 }
 
 .card {
+    background-color: #f4f4f4;
     width: 1600px;
     height: 1auto;
+    border: none;
+    border-radius: 10px;
+    margin-top: 60px;
 }
 
 .card-body {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 4% 2%;
+}
+
+.card-option {
+    margin: 0.7rem !important;
+    background-color: white;
 }
 
 .card-header {
     font-weight: bold;
     text-align: center;
-    background-color: rgb(230, 247, 247);
 }
 
