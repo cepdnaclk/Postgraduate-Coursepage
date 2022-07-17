@@ -64,5 +64,6 @@
 .card-header {
     font-weight: bold;
     text-align: center;
+    background-color: rgb(230, 247, 247);
 }
 
