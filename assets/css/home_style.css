@@ -18,7 +18,7 @@
     color: #000000;
 }
 
-.table, .content, .MSc-Content, .option li, .contact {
+.table, .content, .MSc-Content, .contact, .card {
     font-family: 'Alatsi', sans-serif;
     font-style: normal;
     font-weight: 100;
@@ -41,3 +41,22 @@
     background-color: rgb(230, 247, 247);
     padding: 5px 12px;
 }
+
+.card {
+    width: 1600px;
+    height: 1auto;
+}
+
+.card-body {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.card-header {
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(230, 247, 247);
+}
+
