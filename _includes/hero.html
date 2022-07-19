@@ -31,7 +31,7 @@
                 <ul  class="sub-menu">
                     <a href="http://www.ce.pdn.ac.lk/postgraduate-courses"><li>P.H.D.</li></a>
                     <a href="http://www.ce.pdn.ac.lk/postgraduate-courses"><li>M.Phil.</li></a>
-                    <a href="{{ '/msc' }}" aria-current="page"><li>M.Sc.Eng/M.Sc.</li></a>
+                    <a href="{{ '/msc' | relative_url }}" aria-current="page"><li>M.Sc.Eng/M.Sc.</li></a>
                 </ul>
             </li>
             {% else %}
@@ -49,7 +49,7 @@
             <li><a href="https://people.ce.pdn.ac.lk/staff/academic/" target="_blank">Staff</a></li>
         </ul>
         <div id="search-box">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTpo1NKUlOEZSz60ojVLn6i9RR6rms7_qoyAOjGRx-sjXlhQ/viewform" target="_blank"><img src="../assets/img/home_img/Register.svg" alt=""></a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTpo1NKUlOEZSz60ojVLn6i9RR6rms7_qoyAOjGRx-sjXlhQ/viewform" target="_blank"><img src="{{ '/assets/img/home_img/Register.svg' | relative_url }}" alt=""></a>
         </div>
         {% endif %}
     </div>
