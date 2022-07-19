@@ -9,8 +9,8 @@
         </div>
         <img class="logo" src="/assets/img/home_img/Logo.svg" alt="">
         {% else %}
-        <img class="logo" src="/assets/img/home_img/Logo.svg" alt="">
-        <img class="clock" src="/assets/img/home_img/Clock.svg" alt="">
+        <img class="logo" src="{{ '/assets/img/home_img/Logo.svg' | relative_url }}" alt="">
+        <img class="clock" src="{{ '/assets/img/home_img/Clock.svg' | relative_url }}" alt="">
         {% endif %}
     </div>
     <div class="menu-bar">
