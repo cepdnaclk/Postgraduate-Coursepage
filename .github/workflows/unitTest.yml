@@ -25,6 +25,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
+      - name: Testing Pages
+        run: |
+          cd ./python_scripts/unitTests
+          python3 -m unittest -v test_pages.py
+          cd ../
 
       - name: Syntax testing --> API
         run: |
@@ -32,11 +37,6 @@ jobs:
           python3 -m unittest -v test_api.py
           cd ../
 
-      - name: Syntax testing --> Staff Details
-        run: |
-          cd ./python_scripts/unitTests
-          python3 -m unittest -v test_staff_details.py
-          cd ../
 
       # - name: Commit and push into the main branch
       #   run: |

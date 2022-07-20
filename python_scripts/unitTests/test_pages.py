@@ -2,7 +2,6 @@ import unittest
 import requests
 import os
 
-# from test_functions import get_permalink, get_status_code
 
 def get_permalink(filePath):
     with open(filePath, "r") as f:
@@ -12,8 +11,9 @@ def get_permalink(filePath):
                 permalink = each.split(":")[1].strip()
                 return permalink
 
+
 def get_status_code(permalink):
-    base_url = "http://localhost:4000"
+    base_url = "https://sheiiz.github.io/Postgraduate-Coursepage"
     response = requests.get(base_url + permalink)
     status_code = response.status_code
     return status_code
@@ -22,26 +22,29 @@ def get_status_code(permalink):
 class Test_Pages(unittest.TestCase):
       
     def setUp(self):
-        self.home = "http://localhost:4000/"
-        self.msc = "http://localhost:4000/msc"
-        self.folderPath = "../pages/courses"
+        self.home = '/'
+        self.msc = '/msc'
+        self.api = '/api/courses/'
+        self.folderPath = "../../pages/courses"
     
 
     def test_home_page(self):
-        self.assertEqual(requests.get(self.home).status_code, 200, "home.html page not found")
+        self.assertEqual(get_status_code(self.home), 200, "home.html page not found")
 
     def test_msc_page(self):
-        self.assertEqual(requests.get(self.msc).status_code, 200, "msc.html Page not found")
-
+        self.assertEqual(get_status_code(self.msc), 200, "msc.html Page not found")
+    
+    def test_api(self):
+        self.assertEqual(get_status_code(self.api), 200, "API not found")
 
     def test_course_pages(self):
         allFiles = os.listdir(self.folderPath)
+
         for eachFile in allFiles:
             filePath = self.folderPath + "/" + eachFile
             permalink = get_permalink(filePath)
             status_code = get_status_code(permalink)
             self.assertEqual(status_code, 200, eachFile+" Page not found")
-
 
 if __name__ == '__main__':
     unittest.main()
