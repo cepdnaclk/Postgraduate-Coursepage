@@ -1,0 +1,47 @@
+name: Test the website 
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@master
+        with:
+          ref: main
+
+      - name: Set up Python 3.6
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.6
+
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+
+      - name: Syntax testing --> API
+        run: |
+          cd ./python_scripts/unitTests
+          python3 -m unittest -v test_api.py
+          cd ../
+
+      - name: Syntax testing --> Staff Details
+        run: |
+          cd ./python_scripts/unitTests
+          python3 -m unittest -v test_staff_details.py
+          cd ../
+
+      # - name: Commit and push into the main branch
+      #   run: |
+      #     git config user.name github-actions
+      #     git config user.email github-actions@github.com
+      #     git add --all
+      #     git commit -m "Profiles were updated with the details from Google Form" || echo "No changes"
+      #     git push
