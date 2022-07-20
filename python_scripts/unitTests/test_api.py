@@ -1,11 +1,12 @@
 import unittest
 import json
+import requests
 
-def json_validation(filename):
-    with open(filename) as f:
-        data = f.read()
+
+def json_validation(url):
+    r = requests.get(url)
     try:
-        json.loads(data)
+        json.loads(r.text)
         print("Valid json syntax")
         return True
     except ValueError as err:
@@ -14,12 +15,12 @@ def json_validation(filename):
 
 
 class Test_API(unittest.TestCase):
-      
+
     def setUp(self):
-        self.api_path = "../../_site/api/courses/index.json"
-    
+        self.api_url = "https://sheiiz.github.io/Postgraduate-Coursepage/api/courses/"
+
     def test_api_json_syntax(self):
-        self.assertTrue(json_validation(self.api_path), "Invalid json syntax in API")
+        self.assertTrue(json_validation(self.api_url),"Invalid json syntax in API")
 
 
 if __name__ == '__main__':
