@@ -3,14 +3,14 @@
     <div class="logo-bar">
         {% if page.layout == "coursePage" %}
         <div class="path">
-            <a href="/">Home</a>
+            <a href="{{ '/' | relative_url }}">Home</a>
             <i class="fa fa-chevron-right"></i>
             <span>Course</span>
         </div>
-        <img class="logo" src="/assets/img/home_img/Logo.svg" alt="">
+        <img class="logo" src="{{ '/assets/img/home_img/Logo.svg' | relative_url }} " alt="">
         {% else %}
-        <img class="logo" src="/assets/img/home_img/Logo.svg" alt="">
-        <img class="clock" src="/assets/img/home_img/Clock.svg" alt="">
+        <img class="logo" src="{{ '/assets/img/home_img/Logo.svg' | relative_url }}" alt="">
+        <img class="clock" src="{{ '/assets/img/home_img/Clock.svg' | relative_url }}" alt="">
         {% endif %}
     </div>
     <div class="menu-bar">
@@ -18,44 +18,44 @@
         <label id="course-name">{{ page.course_name }}</label>
         <div id="search-box">
             <label>{{ page.course_code }}</label>
-            <img src="/assets/img/home_img/Course_code.svg" alt="">
+            <img src="{{ '/assets/img/home_img/Course_code.svg' | relative_url }}" alt="">
         </div>
         {% else %}
-        <img class="nav-menu" src="/assets/img/home_img/nav_menu.png" alt="">
+        <img class="nav-menu" src="{{ '/assets/img/home_img/nav_menu.png' | relative_url }}" alt="">
         <ul class="nav-link">
             {% if page.layout == "mastersPage" %}
-            <li><a href="/">Home</a></li>
+            <li><a href="{{ '/' | relative_url }}">Home</a></li>
             <li class="all_course">
                 <a class="lt-green">All Courses<i class="fa fa-chevron-down"></i></a>
                 <div class="space"></div>
                 <ul  class="sub-menu">
                     <a href="http://www.ce.pdn.ac.lk/postgraduate-courses"><li>P.H.D.</li></a>
                     <a href="http://www.ce.pdn.ac.lk/postgraduate-courses"><li>M.Phil.</li></a>
-                    <a href="/msc" aria-current="page"><li>M.Sc.Eng/M.Sc.</li></a>
+                    <a href="{{ '/msc' | relative_url }}" aria-current="page"><li>M.Sc.Eng/M.Sc.</li></a>
                 </ul>
             </li>
             {% else %}
-            <li><a class="lt-green" href="/">Home</a></li>
+            <li><a class="lt-green" href="{{ '/' | relative_url }}">Home</a></li>
             <li class="all_course">
                 <a>All Courses<i class="fa fa-chevron-down"></i></a>
                 <div class="space"></div>
                 <ul  class="sub-menu">
                     <a href="http://www.ce.pdn.ac.lk/postgraduate-courses"><li>Ph.D.</li></a>
                     <a href="http://www.ce.pdn.ac.lk/postgraduate-courses"><li>M.Phil.</li></a>
-                    <a href="/msc"><li>M.Sc.Eng/M.Sc.</li></a>
+                    <a href="{{ '/msc' | relative_url }}"><li>M.Sc.Eng/M.Sc.</li></a>
                 </ul>
             </li>
             {% endif %}
             <li><a href="https://people.ce.pdn.ac.lk/staff/academic/" target="_blank">Staff</a></li>
         </ul>
         <div id="search-box">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTpo1NKUlOEZSz60ojVLn6i9RR6rms7_qoyAOjGRx-sjXlhQ/viewform" target="_blank"><img src="../assets/img/home_img/Register.svg" alt=""></a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTpo1NKUlOEZSz60ojVLn6i9RR6rms7_qoyAOjGRx-sjXlhQ/viewform" target="_blank"><img src="{{ '/assets/img/home_img/Register.svg' | relative_url }}" alt=""></a>
         </div>
         {% endif %}
     </div>
     {% if page.layout != "coursePage" %}
     <div id="hero">
-        <img src="/assets/img/home_img/hero.svg" alt="">
+        <img src="{{ '/assets/img/home_img/hero.svg' | relative_url }}" alt="">
     </div>
     {% endif %}
 
