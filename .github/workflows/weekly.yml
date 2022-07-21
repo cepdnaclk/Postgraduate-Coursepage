@@ -34,20 +34,10 @@ jobs:
           python3 update_staff_details.py
           cd ../
 
-  test:
-    runs-on: ubuntu-latest
-    needs: build
-    
-    steps:
-      - name: Json Syntax Test
-        run: |
-          cd ./python_scripts/unitTests
-          python3 -m unittest -v test_staff_details.py
-          cd ../
-
+  
   commit:
     runs-on: ubuntu-latest
-    needs: test
+    needs: build
     
     steps:
       - name: Commit and push into the main branch
@@ -57,3 +47,14 @@ jobs:
           git add --all
           git commit -m "Staff Details Updated" || echo "No changes"
           git push
+  
+  test:
+    runs-on: ubuntu-latest
+    needs: commit
+    
+    steps:
+      - name: Json Syntax Test
+        run: |
+          cd ./python_scripts/unitTests
+          python3 -m unittest -v test_staff_details.py
+          cd ../
