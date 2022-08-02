@@ -17,7 +17,7 @@ def json_validation(url):
 class Test_API(unittest.TestCase):
 
     def setUp(self):
-        self.api_url = "https://sheiiz.github.io/Postgraduate-Coursepage/api/courses/"
+        self.api_url = "https://cepdnaclk.github.io/Postgraduate-Coursepage/api/courses/"
 
     def test_api_json_syntax(self):
         self.assertTrue(json_validation(self.api_url),"Invalid json syntax in API")
