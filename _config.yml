@@ -24,7 +24,7 @@ plugins:
 ga_tracking: G-VX780EYHK1
 ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
 
-gh_edit_repository: "https://github.com/sheiiz/Postgraduate-Coursepage"
+gh_edit_repository: "https://github.com/cepdnaclk/Postgraduate-Coursepage"
 gh_edit_branch: "main"
 
 permalink: pretty
