@@ -18,6 +18,11 @@ body {
     
 }
 
+.title {
+  margin-top: 80px !important;
+  margin-bottom: 100px !important;
+}
+
 
 /* Footer ------------------------------------------------------------------- */
 .footer-link{

@@ -53,25 +53,16 @@
         </div>
         {% endif %}
     </div>
-    {% if page.layout != "coursePage" %}
+    {% if page.layout == "homePage" %}
     <div id="hero">
-        <img src="/assets/img/home_img/hero.svg" alt="">
+        <label>Welcome to department of Computer Engineering</label>
+        <label>Postgraduate Courses</label>
+    </div>
+    {% elsif page.layout == "mastersPage" %}
+    <div id="hero">
+        <label>Welcome to department of Computer Engineering</label>
+        <label>M.Sc.Eng/M.Sc. Courses</label>
     </div>
     {% endif %}
-
-    <!-- <div class="align-self-center text-center text-light col-md-8 offset-md-2">
-		
-        <div class="lc-block mt-5 pt-5 mx-xs-4 mb-2">
-			<div editable="rich">
-				<p class="lead">Welcome To Department Of Computer Engineering</p>
-			</div>
-		</div>
-
-        
-        <div class="lc-block mt-0 mb-4">
-			<div editable="rich">
-				<h1 class="display-1 fw-bolder">Postgraduate Courses</h1>
-			</div>
-		</div> -->
         
 </div>
