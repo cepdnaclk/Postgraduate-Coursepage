@@ -31,7 +31,7 @@ layout: default
                         <p class="crs_credits">{{ page.course_credits }} Credits</p>
                         <div class="crs_coordinator">
                             <div class="crs_coordinator_img">
-                                <img src="{{ img_url }}" alt="Prof">
+                                <img src="{{ img_url | relative_url }}" alt="Prof">
                             </div>
                             <p class="crs_coordinator_name">by {{ coordinator_name }}</p>
                         </div>
@@ -97,7 +97,7 @@ layout: default
 
                 
                 <div class="row">
-                    <img class="col-2" src="/assets/img/ic_description.svg" alt="Description">
+                    <img class="col-2" src="{{ '/assets/img/ic_description.svg' | relative_url }}" alt="Description">
                     <div class="desc-title col-10">
                         <h3>Description</h3>
                     </div>
@@ -223,13 +223,13 @@ layout: default
                         <div class="inner-content d-flex flex-column align-items-center justify-content-center">
 
                             <div class="img-container rounded-circle">
-                                <img src="{{img_url}}" alt="" class="rounded-circle">
+                                <img src="{{ img_url | relative_url }}" alt="" class="rounded-circle">
                             </div>
 
                             <span class="h4 text-center text-uppercase px-2">{{ lecturer_name }}</span>
                             <p class="designation text-uppercase">Lecturer</p>
                             {% if profile_url != '#' %}
-                            <p><a href="{{profile_url}}" class="btn btn-outline-primary btn-sm btn-viewProfile">View Profile</a></p>
+                            <p><a href="{{ profile_url | relative_url }}" class="btn btn-outline-primary btn-sm btn-viewProfile">View Profile</a></p>
                             {% endif %}
                         </div>
                         
@@ -238,23 +238,23 @@ layout: default
                             {% if linkedin or google_scholar or researchgate or website or orcid %}
 
                             {% if linkedin != '' %}
-                            <li><a href="{{linkedin}}"><span class="fab fa-linkedin-in"></span></a></li>
+                            <li><a href="{{ linkedin | relative_url }}"><span class="fab fa-linkedin-in"></span></a></li>
                             {% endif %}
                             
                             {% if website != '' %}
-                            <li><a href="{{website}}"><span class="fa fa-globe"></span></a></li>
+                            <li><a href="{{ website | relative_url }}"><span class="fa fa-globe"></span></a></li>
                             {% endif %}
 
                             {% if researchgate != '' %}
-                            <li><a href="{{researchgate}}"><span class="fab fa-researchgate fa-lg"></span></a></li>
+                            <li><a href="{{ researchgate | relative_url }}"><span class="fab fa-researchgate fa-lg"></span></a></li>
                             {% endif %}
 
                             {% if orcid != '' %}
-                            <li><a href="{{orcid}}"><span class="fab fa-orcid"></span></a></li>
+                            <li><a href="{{ orcid | relative_url }}"><span class="fab fa-orcid"></span></a></li>
                             {% endif %}
 
                             {% if google_scholar != '' %}
-                            <li><a href="{{google_scholar}}"><span class="fab fa-google"></span></a></li>
+                            <li><a href="{{ google_scholar | relative_url }}"><span class="fab fa-google"></span></a></li>
                             {% endif %}
 
                             {% else %}
@@ -280,13 +280,13 @@ layout: default
                         <div class="inner-content d-flex flex-column align-items-center justify-content-center">
 
                             <div class="img-container rounded-circle">
-                                <img src="{{img_url}}" alt="" class="rounded-circle">
+                                <img src="{{ img_url | relative_url }}" alt="" class="rounded-circle">
                             </div>
 
                             <span class="h4 text-center text-uppercase px-2">{{ instructor_name }}</span>
                             <p class="designation text-uppercase">Instructor</p>
                             {% if profile_url != '#' %}
-                            <p><a href="{{profile_url}}" class="btn btn-outline-primary btn-sm btn-viewProfile">View Profile</a></p>
+                            <p><a href="{{ profile_url | relative_url }}" class="btn btn-outline-primary btn-sm btn-viewProfile">View Profile</a></p>
                             {% endif %}
                         </div>
                         
@@ -295,23 +295,23 @@ layout: default
                             {% if linkedin or google_scholar or researchgate or website or orcid %}
 
                             {% if linkedin != '' %}
-                            <li><a href="{{linkedin}}"><span class="fab fa-linkedin-in"></span></a></li>
+                            <li><a href="{{ linkedin | relative_url }}"><span class="fab fa-linkedin-in"></span></a></li>
                             {% endif %}
                             
                             {% if website != '' %}
-                            <li><a href="{{website}}"><span class="fa fa-globe"></span></a></li>
+                            <li><a href="{{ website | relative_url }}"><span class="fa fa-globe"></span></a></li>
                             {% endif %}
 
                             {% if researchgate != '' %}
-                            <li><a href="{{researchgate}}"><span class="fab fa-researchgate fa-lg"></span></a></li>
+                            <li><a href="{{ researchgate | relative_url }}"><span class="fab fa-researchgate fa-lg"></span></a></li>
                             {% endif %}
 
                             {% if orcid != '' %}
-                            <li><a href="{{orcid}}"><span class="fab fa-orcid"></span></a></li>
+                            <li><a href="{{ orcid | relative_url }}"><span class="fab fa-orcid"></span></a></li>
                             {% endif %}
 
                             {% if google_scholar != '' %}
-                            <li><a href="{{google_scholar}}"><span class="fab fa-google"></span></a></li>
+                            <li><a href="{{ google_scholar | relative_url }}"><span class="fab fa-google"></span></a></li>
                             {% endif %}
 
                             {% else %}

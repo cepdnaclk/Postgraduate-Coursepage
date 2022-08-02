@@ -57,14 +57,14 @@ layout: default
                                     {% assign coordinator_name = site.data.staff_details[coordinator_id].name %}
                                     {% assign img_url = site.data.staff_details[coordinator_id].profile_image %}
                                     <div class="crs_coordinator_img">
-                                        <img src="{{ img_url }}" alt="Prof">
+                                        <img src="{{ img_url | relative_url }}" alt="Prof">
                                     </div>
                                     <p class="crs_coordinator_name">by {{ coordinator_name }}</p>
                                 </div>
                             </div>
                         </div>
 
-                        <a href="{{ each.permalink}}" class="btn btn-outline-primary btn-viewMore mx-auto">View
+                        <a href="{{ each.permalink | relative_url }}" class="btn btn-outline-primary btn-viewMore mx-auto">View
                             More</a>
                     </div>
                 </div>
@@ -101,14 +101,14 @@ layout: default
                                     {% assign coordinator_name = site.data.staff_details[coordinator_id].name %}
                                     {% assign img_url = site.data.staff_details[coordinator_id].profile_image %}
                                     <div class="crs_coordinator_img">
-                                        <img src="{{ img_url }}" alt="Prof">
+                                        <img src="{{ img_url | relative_url }}" alt="Prof">
                                     </div>
                                     <p class="crs_coordinator_name">by {{ coordinator_name }}</p>
                                 </div>
                             </div>
                         </div>
 
-                        <a href="{{ each.permalink}}" class="btn btn-outline-primary btn-viewMore mx-auto">View
+                        <a href="{{ each.permalink | relative_url }}" class="btn btn-outline-primary btn-viewMore mx-auto">View
                             More</a>
                     </div>
                 </div>
@@ -146,14 +146,14 @@ layout: default
                                     {% assign coordinator_name = site.data.staff_details[coordinator_id].name %}
                                     {% assign img_url = site.data.staff_details[coordinator_id].profile_image %}
                                     <div class="crs_coordinator_img">
-                                        <img src="{{ img_url }}" alt="Prof">
+                                        <img src="{{ img_url | relative_url }}" alt="Prof">
                                     </div>
                                     <p class="crs_coordinator_name">by {{ coordinator_name }}</p>
                                 </div>
                             </div>
                         </div>
 
-                        <a href="{{ each.permalink}}" class="btn btn-outline-primary btn-viewMore mx-auto">View
+                        <a href="{{ each.permalink | relative_url }}" class="btn btn-outline-primary btn-viewMore mx-auto">View
                             More</a>
                     </div>
                 </div>
@@ -191,14 +191,14 @@ layout: default
                                     {% assign coordinator_name = site.data.staff_details[coordinator_id].name %}
                                     {% assign img_url = site.data.staff_details[coordinator_id].profile_image %}
                                     <div class="crs_coordinator_img">
-                                        <img src="{{ img_url }}" alt="Prof">
+                                        <img src="{{ img_url | relative_url }}" alt="Prof">
                                     </div>
                                     <p class="crs_coordinator_name">by {{ coordinator_name }}</p>
                                 </div>
                             </div>
                         </div>
 
-                        <a href="{{ each.permalink}}" class="btn btn-outline-primary btn-viewMore mx-auto">View
+                        <a href="{{ each.permalink | relative_url }}" class="btn btn-outline-primary btn-viewMore mx-auto">View
                             More</a>
                     </div>
                 </div>
