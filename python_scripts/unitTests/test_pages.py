@@ -13,7 +13,7 @@ def get_permalink(filePath):
 
 
 def get_status_code(permalink):
-    base_url = "https://sheiiz.github.io/Postgraduate-Coursepage"
+    base_url = "https://cepdnaclk.github.io/Postgraduate-Coursepage"
     response = requests.get(base_url + permalink)
     status_code = response.status_code
     return status_code
