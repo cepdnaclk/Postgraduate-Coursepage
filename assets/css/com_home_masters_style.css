@@ -15,7 +15,7 @@
     background: url(../img/home_img/bg-home.jpg);
     background-size: cover;
     background-attachment: fixed;
-    background-color:rgb(64, 64, 64, 0.55);
+    background-color: rgb(64, 64, 64, 0.55);
     background-blend-mode: overlay;
 }
 
@@ -55,19 +55,19 @@
     display: none;
 }
 
-#home .menu-bar > ul {
+#home .menu-bar>ul {
     text-decoration: none;
     margin: 0;
     padding: 0px 0px 0px 30px;
 }
 
-#home .menu-bar > ul > li {
+#home .menu-bar>ul>li {
     list-style: none;
     display: inline-block;
     margin-right: 35px;
 }
 
-#home .menu-bar > ul > li > a {
+#home .menu-bar>ul>li>a {
     text-decoration: none;
     color: #ffffff;
     font-family: Inria Sans;
@@ -76,7 +76,7 @@
     font-size: 20px;
 }
 
-#home .menu-bar > ul > li:hover > a {
+#home .menu-bar>ul>li:hover>a {
     color: #809492;
 }
 
@@ -183,13 +183,27 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-#hero img {
+#hero label {
     position: absolute;
-    bottom: 55%;
-    height: 158px;
+    color: white;
+    font-family: 'Inria Sans', sans-serif;
+    font-style: normal;
+    line-height: 50px;
+    text-align: center;
+}
+
+#hero label:first-child {
+    top: 22%;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#hero label:last-child {
+    top: 37%;
+    font-weight: 900;
+    font-size: 50px;
 }
 
 /* screen <= 768px */
@@ -198,7 +212,7 @@
     #home .logo {
         width: 40%;
     }
-    
+
     #home .clock {
         width: 22%;
     }
@@ -208,11 +222,11 @@
         overflow: visible;
     }
 
-    #home .menu-bar > ul > li {
+    #home .menu-bar>ul>li {
         margin-right: 20px;
     }
 
-    #home .menu-bar > ul > li > a {
+    #home .menu-bar>ul>li>a {
         font-size: 15px;
     }
 
@@ -249,9 +263,12 @@
         top: 0;
     }
 
-    #hero img {
-        bottom: 50%;
-        height: 120px;
+    #hero label:first-child {
+        font-size: 20px;
+    }
+    
+    #hero label:last-child {
+        font-size: 40px;
     }
 }
 
@@ -261,14 +278,14 @@
     #home .logo {
         width: 50%;
     }
-    
+
     #home .clock {
         width: 27%;
     }
 
     #home .menu-bar {
         position: relative;
-        height: 40px;      
+        height: 40px;
     }
 
     #home .menu-bar .nav-menu {
@@ -279,7 +296,7 @@
         color: #196962;
     }
 
-    #home .menu-bar > ul {
+    #home .menu-bar>ul {
         position: absolute;
         width: 100%;
         display: none;
@@ -292,17 +309,17 @@
         z-index: 100;
     }
 
-    #home .menu-bar > ul.active {
+    #home .menu-bar>ul.active {
         display: flex;
     }
 
-    #home .menu-bar > ul > li {
+    #home .menu-bar>ul>li {
         margin: 0px;
         margin-top: 30px;
         font-size: 100%;
     }
 
-    #home .menu-bar > ul > li:hover > a {
+    #home .menu-bar>ul>li:hover>a {
         font-size: 110%;
         color: #30746d;
     }
@@ -345,9 +362,12 @@
         padding-right: 0px;
         font-size: medium;
     }
-
-    #hero img {
-        bottom: 50%;
-        height: 100px;
+  
+    #hero label:first-child {
+        font-size: 15px;
+    }
+    
+    #hero label:last-child {
+        font-size: 30px;
     }
 }
