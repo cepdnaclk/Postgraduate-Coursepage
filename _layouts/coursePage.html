@@ -43,17 +43,14 @@ layout: default
                     <table class="table">
                         <tbody>
                             <tr>
-                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
                                 <td>Lectures</td>
                                 <td>{{ page.lecture_hours }} hours</td>
                             </tr>
                             <tr>
-                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
                                 <td>Tutorial classes</td>
                                 <td>{{ page.tutorial_hours }} hours</td>
                             </tr>
                             <tr>
-                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
                                 <td>Practical classes</td>
                                 <td>{{ page.practical_hours }} hours</td>
                             </tr>
@@ -64,22 +61,18 @@ layout: default
                     <table class="table">
                         <tbody>
                             <tr>
-                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
                                 <td>Practical</td>
                                 <td>{{ page.practical_marks }}</td>
                             </tr>
                             <tr>
-                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
                                 <td>Assignments</td>
                                 <td>{{ page.assignment_marks }}</td>
                             </tr>
                             <tr>
-                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
                                 <td>Mid Examination</td>
                                 <td>{{ page.midExam_marks }}</td>
                             </tr>
                             <tr>
-                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
                                 <td>End Examination</td>
                                 <td>{{ page.endExam_marks }}</td>
                             </tr>
@@ -124,7 +117,6 @@ layout: default
                         <tbody>
                             {% for each in page.textbooks %}
                             <tr>
-                                <!-- <th scope="row"><i class="bi bi-arrow-right"></i></th> -->
                                 <th scope="row"><label class="fas fa-arrow-right me-2"></label></th>
                                 <td>{{ each }}</td>
                             </tr>
@@ -147,7 +139,6 @@ layout: default
                 <div class="col-lg-3 col-md-6">
                     <div class="single_counter d-flex align-items-center justify-content-center">
                         <div class="icon">
-                            <!-- <i class="flaticon-calendar"></i> -->
                             <img src="{{ '/assets/img/icons/ic_add_user.png' | relative_url }}" alt="Description" style="width: 75px;">
                         </div>
                         <div class="events">
@@ -159,7 +150,6 @@ layout: default
                 <div class="col-lg-3 col-md-6">
                     <div class="single_counter d-flex align-items-center justify-content-center">
                         <div class="icon">
-                            <!-- <i class="flaticon-calendar"></i> -->
                             <img src="{{ '/assets/img/icons/a_passes.png' | relative_url }}" alt="Description" style="width: 75px;">
                         </div>
                         <div class="events">
@@ -171,7 +161,6 @@ layout: default
                 <div class="col-lg-3 col-md-6">
                     <div class="single_counter d-flex align-items-center justify-content-center">
                         <div class="icon">
-                            <!-- <i class="flaticon-calendar"></i> -->
                             <img src="{{ '/assets/img/icons/b_passes.png' | relative_url }}" alt="Description" style="width: 75px;">
                         </div>
                         <div class="events">
@@ -183,7 +172,6 @@ layout: default
                 <div class="col-lg-3 col-md-6">
                     <div class="single_counter d-flex align-items-center justify-content-center">
                         <div class="icon">
-                            <!-- <i class="flaticon-calendar"></i> -->
                             <img src="{{ '/assets/img/icons/grad_std.png' | relative_url }}" alt="Description" style="width: 62px;">
                         </div>
                         <div class="events">
@@ -195,7 +183,16 @@ layout: default
             </div>
         </div>
     </div>
-    <a href="#">View All</a>
+    <a href="#"><label for="view_all">View All</label></a>
+</div>
+
+<input type="checkbox" name="indicator" id="view_all">
+
+<div class="bg-popup">
+    <div class="popup-win">
+        <label for="view_all"><i class="bi bi-plus-lg"></i></label>
+        <img src="{{ '/assets/img/charts.jpg' | relative_url }}" alt="charts" style="height: 100%; margin-left: 7%;">
+    </div>
 </div>
 <!-- counter_area_end  -->
 
