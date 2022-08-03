@@ -97,7 +97,7 @@ layout: default
 
                 
                 <div class="row">
-                    <img class="col-2" src="{{ '/assets/img/ic_description.svg' | relative_url }}" alt="Description">
+                    <img class="col-2" src="{{ '/assets/img/icons/ic_description.svg' | relative_url }}" alt="Description">
                     <div class="desc-title col-10">
                         <h3>Description</h3>
                     </div>
@@ -147,44 +147,48 @@ layout: default
                 <div class="col-lg-3 col-md-6">
                     <div class="single_counter d-flex align-items-center justify-content-center">
                         <div class="icon">
-                            <i class="flaticon-calendar"></i>
-                        </div>
-                        <div class="events">
-                            <h3 class="counter">{{ page.stat1 }}</h3>
-                            <p class="text-uppercase">Finished Event</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single_counter d-flex align-items-center justify-content-center">
-                        <div class="icon">
-                            <i class="flaticon-calendar"></i>
-                        </div>
-                        <div class="events">
-                            <h3 class="counter">{{ page.stat2 }}</h3>
-                            <p class="text-uppercase">Finished Event</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single_counter d-flex align-items-center justify-content-center">
-                        <div class="icon">
-                            <i class="flaticon-calendar"></i>
-                        </div>
-                        <div class="events">
-                            <h3 class="counter">{{ page.stat3 }}</h3>
-                            <p class="text-uppercase">Finished Event</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single_counter d-flex align-items-center justify-content-center">
-                        <div class="icon">
-                            <i class="flaticon-calendar"></i>
+                            <!-- <i class="flaticon-calendar"></i> -->
+                            <img src="{{ '/assets/img/icons/ic_add_user.png' | relative_url }}" alt="Description" style="width: 75px;">
                         </div>
                         <div class="events">
                             <h3 class="counter">{{ page.stat4 }}</h3>
-                            <p class="text-uppercase">Finished Event</p>
+                            <p class="text-uppercase">Enroll last year</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single_counter d-flex align-items-center justify-content-center">
+                        <div class="icon">
+                            <!-- <i class="flaticon-calendar"></i> -->
+                            <img src="{{ '/assets/img/icons/a_passes.png' | relative_url }}" alt="Description" style="width: 75px;">
+                        </div>
+                        <div class="events">
+                            <h3 class="counter">{{ page.stat1 }}</h3>
+                            <p class="text-uppercase">A - passes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single_counter d-flex align-items-center justify-content-center">
+                        <div class="icon">
+                            <!-- <i class="flaticon-calendar"></i> -->
+                            <img src="{{ '/assets/img/icons/b_passes.png' | relative_url }}" alt="Description" style="width: 75px;">
+                        </div>
+                        <div class="events">
+                            <h3 class="counter">{{ page.stat2 }}</h3>
+                            <p class="text-uppercase">B - passes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single_counter d-flex align-items-center justify-content-center">
+                        <div class="icon">
+                            <!-- <i class="flaticon-calendar"></i> -->
+                            <img src="{{ '/assets/img/icons/grad_std.png' | relative_url }}" alt="Description" style="width: 62px;">
+                        </div>
+                        <div class="events">
+                            <h3 class="counter">{{ page.stat3 }}</h3>
+                            <p class="text-uppercase">pass std</p>
                         </div>
                     </div>
                 </div>
@@ -200,12 +204,12 @@ layout: default
 <div class="profileCard reveal">
     <div class="container pb-5">
         <div class="row px-2">
-            <div class="col-12 text-center title">
+            <div class="col-12 text-center title-staff">
                 <span class="text-uppercase fw-bold h6 d-block" style="color: #1EB2A6;">STAFF</span>
                 <h1 class="fw-bold mb-5 pb-2 section-title">Academic Staff Members For This Module</h2>
             </div>
 
-            <div class="slider col-12 mt-5">
+            <div class="slider col-12 mt-0">
                 <div class="owl-carousel">
                    
                     {% for lecturer in page.email_lecturers %}

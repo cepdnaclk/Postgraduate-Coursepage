@@ -16,7 +16,7 @@
     background-color: #ececec;
     padding: 0;
     padding-top: 30px;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
 }
 
 .title {
@@ -29,7 +29,11 @@
     color: #000000;
 }
 
-.table, .content, .MSc-Content, .contact, .card {
+.table,
+.content,
+.MSc-Content,
+.contact,
+.card {
     font-family: 'Alatsi', sans-serif;
     font-style: normal;
     font-weight: 100;
@@ -68,7 +72,8 @@
 }
 
 .card-option {
-    margin: 0.7rem !important;
+    box-sizing: border-box;
+    margin: 0.7rem;
     background-color: white;
 }
 
@@ -78,3 +83,63 @@
     background-color: rgb(230, 247, 247);
 }
 
+/* ---------------------------------------------------------------------------- */
+
+.card-opt {
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 5%;
+    padding-left: calc(45px + 5%);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.card-boder {
+    padding-bottom: 1.4rem;
+}
+
+.card-opt:hover {
+    transform: scale(1.02);
+    background-color: rgb(255, 255, 255);
+}
+
+.card-opt .card-body h3 {
+    font-family: 'Alatsi', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 0.1em;
+    color: #535353;
+}
+
+.card-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 45px;
+    background-color: #1EB2A6;
+    top: 0;
+    left: 0;
+}
+
+.card-side p {
+    font-family: 'Titan One', cursive;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: 0.5rem;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-orientation: sideways;
+    text-align: right;
+    text-orientation: sideways;
+}

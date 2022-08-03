@@ -23,6 +23,16 @@ body {
   margin-bottom: 8% !important;
 }
 
+.title-staff {
+  margin-top: 5% !important;
+  margin-bottom: 4% !important;
+}
+
+.title-home {
+  margin-top: 4% !important;
+  margin-bottom: 6% !important;
+}
+
 
 /* Footer ------------------------------------------------------------------- */
 .footer-link{
