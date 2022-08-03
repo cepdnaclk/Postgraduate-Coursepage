@@ -759,6 +759,8 @@
     width: 85%;
     height: 90%;
     background-color: white;
+    padding: 10px;
+    padding-top: 25px;
 }
 
 .popup-win label {
